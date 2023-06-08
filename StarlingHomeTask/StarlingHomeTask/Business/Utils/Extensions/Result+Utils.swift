@@ -14,3 +14,14 @@ public extension Swift.Result where Success == Void {
         return .success(())
     }
 }
+
+public extension Result {
+    var value: Success? {
+        switch self {
+        case let .success(val):
+            return val
+        case .failure:
+            return nil
+        }
+    }
+}

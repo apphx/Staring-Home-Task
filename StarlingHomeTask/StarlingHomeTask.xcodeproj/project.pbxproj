@@ -27,6 +27,11 @@
 		E22CA83D2A3273CA00ABA374 /* AuthorizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA83C2A3273CA00ABA374 /* AuthorizationServiceTests.swift */; };
 		E22CA8402A32756E00ABA374 /* Assert+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA83F2A32756E00ABA374 /* Assert+Utils.swift */; };
 		E22CA8422A32778C00ABA374 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8412A32778C00ABA374 /* TestError.swift */; };
+		E22CA8452A32798600ABA374 /* AuthorizationMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8442A32798600ABA374 /* AuthorizationMiddleware.swift */; };
+		E22CA8482A327DC700ABA374 /* AuthorizationMiddlewareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8472A327DC600ABA374 /* AuthorizationMiddlewareTests.swift */; };
+		E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */; };
+		E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */; };
+		E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA84E2A32825E00ABA374 /* NotificationName+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		E22CA83C2A3273CA00ABA374 /* AuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationServiceTests.swift; sourceTree = "<group>"; };
 		E22CA83F2A32756E00ABA374 /* Assert+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assert+Utils.swift"; sourceTree = "<group>"; };
 		E22CA8412A32778C00ABA374 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		E22CA8442A32798600ABA374 /* AuthorizationMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationMiddleware.swift; sourceTree = "<group>"; };
+		E22CA8472A327DC600ABA374 /* AuthorizationMiddlewareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationMiddlewareTests.swift; sourceTree = "<group>"; };
+		E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPUrlResponse+Sample.swift"; sourceTree = "<group>"; };
+		E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Sample.swift"; sourceTree = "<group>"; };
+		E22CA84E2A32825E00ABA374 /* NotificationName+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,7 @@
 		E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA8492A327EFC00ABA374 /* Samples */,
 				E22CA83E2A32756000ABA374 /* Utils */,
 				E22CA81C2A324F7600ABA374 /* Mocks */,
 			);
@@ -192,6 +203,7 @@
 		E22CA8142A32497C00ABA374 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA8462A327A0A00ABA374 /* Extensions */,
 				E22CA8232A3259D900ABA374 /* Models */,
 			);
 			path = Utils;
@@ -212,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				E22CA8152A3249A200ABA374 /* Cancellable.swift */,
-				E22CA8172A324A0800ABA374 /* Result+Utils.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 		E22CA8372A3272BB00ABA374 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA8432A32796F00ABA374 /* AuthorizationMiddleware */,
 				E22CA8112A32489F00ABA374 /* NetworkingClient */,
 			);
 			path = Networking;
@@ -266,6 +278,33 @@
 				E22CA8412A32778C00ABA374 /* TestError.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E22CA8432A32796F00ABA374 /* AuthorizationMiddleware */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8442A32798600ABA374 /* AuthorizationMiddleware.swift */,
+				E22CA8472A327DC600ABA374 /* AuthorizationMiddlewareTests.swift */,
+			);
+			path = AuthorizationMiddleware;
+			sourceTree = "<group>";
+		};
+		E22CA8462A327A0A00ABA374 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA84E2A32825E00ABA374 /* NotificationName+Utils.swift */,
+				E22CA8172A324A0800ABA374 /* Result+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E22CA8492A327EFC00ABA374 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */,
+				E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +439,7 @@
 			files = (
 				E22CA8332A32700B00ABA374 /* AuthorizationService.swift in Sources */,
 				E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */,
+				E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */,
 				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
 				E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */,
 				E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */,
@@ -407,6 +447,7 @@
 				E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */,
 				E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */,
 				E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */,
+				E22CA8452A32798600ABA374 /* AuthorizationMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +458,9 @@
 				E22CA8202A32503E00ABA374 /* CancellableMock.swift in Sources */,
 				E22CA8402A32756E00ABA374 /* Assert+Utils.swift in Sources */,
 				E22CA81E2A324F8700ABA374 /* NetworkingClientMock.swift in Sources */,
+				E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */,
+				E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */,
+				E22CA8482A327DC700ABA374 /* AuthorizationMiddlewareTests.swift in Sources */,
 				E22CA83B2A32730200ABA374 /* AuthorizationServiceMock.swift in Sources */,
 				E22CA8422A32778C00ABA374 /* TestError.swift in Sources */,
 				E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */,

@@ -17,15 +17,23 @@ protocol NetworkingClientProtocol: AnyObject {
 
 final class NetworkingClient: NetworkingClientProtocol {
     private let urlSession: URLSession
+    private let authorizationMiddleware: AuthorizationMiddlewareProtocol
 
     // For injection and testing purposes; different strategies for testing this class can be employed
     // eg. defining a custom URLSessionProtocol with a mock; for simplicity sake this will be taken as is
-    init(urlSession: URLSession) {
+    init(
+        urlSession: URLSession,
+        authorizationMiddleware: AuthorizationMiddlewareProtocol
+    ) {
         self.urlSession = urlSession
+        self.authorizationMiddleware = authorizationMiddleware
     }
 
     convenience init() {
-        self.init(urlSession: .shared)
+        self.init(
+            urlSession: .shared,
+            authorizationMiddleware: AuthorizationMiddleware()
+        )
     }
 
     @discardableResult
@@ -33,7 +41,8 @@ final class NetworkingClient: NetworkingClientProtocol {
         request: URLRequest,
         completion: @escaping (Result<T>) -> Void
     ) -> Cancellable where T: Decodable {
-        let task = urlSession.dataTask(with: request) { data, response, error in
+        let authorizedRequest = authorizationMiddleware.authorizedRequest(from: request)
+        let task = urlSession.dataTask(with: authorizedRequest) { [authorizationMiddleware] data, response, error in
             do {
                 if let error = error { throw error }
                 guard let httpResponse = response as? HTTPURLResponse, let data else {
@@ -42,6 +51,7 @@ final class NetworkingClient: NetworkingClientProtocol {
                 guard (200..<300).contains(httpResponse.statusCode) else {
                     throw ApiError.httpFailure(code: httpResponse.statusCode)
                 }
+                try authorizationMiddleware.validate(response: httpResponse)
                 let decodedResponse = try JSONDecoder().decode(T.self, from: data)
                 completion(.success(decodedResponse))
             } catch {
