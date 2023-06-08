@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */; };
 		E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */; };
-		E22CA7E32A323EC000ABA374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7E22A323EC000ABA374 /* ViewController.swift */; };
 		E22CA7E82A323EC400ABA374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22CA7E72A323EC400ABA374 /* Assets.xcassets */; };
 		E22CA7EB2A323EC400ABA374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */; };
 		E22CA7F62A323EC500ABA374 /* StarlingHomeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7F52A323EC500ABA374 /* StarlingHomeTaskTests.swift */; };
@@ -47,7 +46,6 @@
 		E22CA7DB2A323EC000ABA374 /* StarlingHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarlingHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E22CA7E22A323EC000ABA374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E22CA7E72A323EC400ABA374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E22CA7EA2A323EC400ABA374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E22CA7EC2A323EC400ABA374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			children = (
 				E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */,
 				E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */,
-				E22CA7E22A323EC000ABA374 /* ViewController.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -361,7 +358,6 @@
 				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
 				E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */,
 				E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */,
-				E22CA7E32A323EC000ABA374 /* ViewController.swift in Sources */,
 				E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */,
 				E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */,
 				E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */,
