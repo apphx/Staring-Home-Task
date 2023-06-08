@@ -9,7 +9,6 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:StarlingHomeTask.xcodeproj",
       "identifier" : "E22CA7DA2A323EBF00ABA374",
