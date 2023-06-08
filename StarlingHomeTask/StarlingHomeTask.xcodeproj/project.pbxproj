@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */; };
+		E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */; };
+		E22CA7E32A323EC000ABA374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7E22A323EC000ABA374 /* ViewController.swift */; };
+		E22CA7E82A323EC400ABA374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22CA7E72A323EC400ABA374 /* Assets.xcassets */; };
+		E22CA7EB2A323EC400ABA374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */; };
+		E22CA7F62A323EC500ABA374 /* StarlingHomeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7F52A323EC500ABA374 /* StarlingHomeTaskTests.swift */; };
+		E22CA8002A323EC500ABA374 /* StarlingHomeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */; };
+		E22CA8022A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E22CA7F22A323EC500ABA374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22CA7D32A323EBF00ABA374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22CA7DA2A323EBF00ABA374;
+			remoteInfo = StarlingHomeTask;
+		};
+		E22CA7FC2A323EC500ABA374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22CA7D32A323EBF00ABA374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22CA7DA2A323EBF00ABA374;
+			remoteInfo = StarlingHomeTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E22CA7DB2A323EC000ABA374 /* StarlingHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarlingHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E22CA7E22A323EC000ABA374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E22CA7E72A323EC400ABA374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E22CA7EA2A323EC400ABA374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E22CA7EC2A323EC400ABA374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22CA7F12A323EC500ABA374 /* StarlingHomeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingHomeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22CA7F52A323EC500ABA374 /* StarlingHomeTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskTests.swift; sourceTree = "<group>"; };
+		E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingHomeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskUITests.swift; sourceTree = "<group>"; };
+		E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E22CA7D82A323EBF00ABA374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CA7EE2A323EC500ABA374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CA7F82A323EC500ABA374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E22CA7D22A323EBF00ABA374 = {
+			isa = PBXGroup;
+			children = (
+				E22CA7DD2A323EC000ABA374 /* StarlingHomeTask */,
+				E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */,
+				E22CA7FE2A323EC500ABA374 /* StarlingHomeTaskUITests */,
+				E22CA7DC2A323EC000ABA374 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E22CA7DC2A323EC000ABA374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA7DB2A323EC000ABA374 /* StarlingHomeTask.app */,
+				E22CA7F12A323EC500ABA374 /* StarlingHomeTaskTests.xctest */,
+				E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E22CA7DD2A323EC000ABA374 /* StarlingHomeTask */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */,
+				E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */,
+				E22CA7E22A323EC000ABA374 /* ViewController.swift */,
+				E22CA7E72A323EC400ABA374 /* Assets.xcassets */,
+				E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */,
+				E22CA7EC2A323EC400ABA374 /* Info.plist */,
+			);
+			path = StarlingHomeTask;
+			sourceTree = "<group>";
+		};
+		E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA7F52A323EC500ABA374 /* StarlingHomeTaskTests.swift */,
+			);
+			path = StarlingHomeTaskTests;
+			sourceTree = "<group>";
+		};
+		E22CA7FE2A323EC500ABA374 /* StarlingHomeTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */,
+				E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */,
+			);
+			path = StarlingHomeTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22CA8052A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTask" */;
+			buildPhases = (
+				E22CA7D72A323EBF00ABA374 /* Sources */,
+				E22CA7D82A323EBF00ABA374 /* Frameworks */,
+				E22CA7D92A323EBF00ABA374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarlingHomeTask;
+			productName = StarlingHomeTask;
+			productReference = E22CA7DB2A323EC000ABA374 /* StarlingHomeTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E22CA7F02A323EC500ABA374 /* StarlingHomeTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22CA8082A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTaskTests" */;
+			buildPhases = (
+				E22CA7ED2A323EC500ABA374 /* Sources */,
+				E22CA7EE2A323EC500ABA374 /* Frameworks */,
+				E22CA7EF2A323EC500ABA374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22CA7F32A323EC500ABA374 /* PBXTargetDependency */,
+			);
+			name = StarlingHomeTaskTests;
+			productName = StarlingHomeTaskTests;
+			productReference = E22CA7F12A323EC500ABA374 /* StarlingHomeTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E22CA7FA2A323EC500ABA374 /* StarlingHomeTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22CA80B2A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTaskUITests" */;
+			buildPhases = (
+				E22CA7F72A323EC500ABA374 /* Sources */,
+				E22CA7F82A323EC500ABA374 /* Frameworks */,
+				E22CA7F92A323EC500ABA374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22CA7FD2A323EC500ABA374 /* PBXTargetDependency */,
+			);
+			name = StarlingHomeTaskUITests;
+			productName = StarlingHomeTaskUITests;
+			productReference = E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E22CA7D32A323EBF00ABA374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E22CA7DA2A323EBF00ABA374 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E22CA7F02A323EC500ABA374 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E22CA7DA2A323EBF00ABA374;
+					};
+					E22CA7FA2A323EC500ABA374 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E22CA7DA2A323EBF00ABA374;
+					};
+				};
+			};
+			buildConfigurationList = E22CA7D62A323EBF00ABA374 /* Build configuration list for PBXProject "StarlingHomeTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E22CA7D22A323EBF00ABA374;
+			productRefGroup = E22CA7DC2A323EC000ABA374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */,
+				E22CA7F02A323EC500ABA374 /* StarlingHomeTaskTests */,
+				E22CA7FA2A323EC500ABA374 /* StarlingHomeTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E22CA7D92A323EBF00ABA374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22CA7EB2A323EC400ABA374 /* LaunchScreen.storyboard in Resources */,
+				E22CA7E82A323EC400ABA374 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CA7EF2A323EC500ABA374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CA7F92A323EC500ABA374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E22CA7D72A323EBF00ABA374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22CA7E32A323EC000ABA374 /* ViewController.swift in Sources */,
+				E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */,
+				E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CA7ED2A323EC500ABA374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22CA7F62A323EC500ABA374 /* StarlingHomeTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CA7F72A323EC500ABA374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22CA8022A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift in Sources */,
+				E22CA8002A323EC500ABA374 /* StarlingHomeTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E22CA7F32A323EC500ABA374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */;
+			targetProxy = E22CA7F22A323EC500ABA374 /* PBXContainerItemProxy */;
+		};
+		E22CA7FD2A323EC500ABA374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */;
+			targetProxy = E22CA7FC2A323EC500ABA374 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22CA7EA2A323EC400ABA374 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E22CA8032A323EC500ABA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E22CA8042A323EC500ABA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E22CA8062A323EC500ABA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6885U2XYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarlingHomeTask/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StarlingHomeTask;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E22CA8072A323EC500ABA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6885U2XYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarlingHomeTask/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StarlingHomeTask;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E22CA8092A323EC500ABA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6885U2XYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarlingHomeTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarlingHomeTask";
+			};
+			name = Debug;
+		};
+		E22CA80A2A323EC500ABA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6885U2XYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarlingHomeTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarlingHomeTask";
+			};
+			name = Release;
+		};
+		E22CA80C2A323EC500ABA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6885U2XYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarlingHomeTask;
+			};
+			name = Debug;
+		};
+		E22CA80D2A323EC500ABA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6885U2XYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarlingHomeTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E22CA7D62A323EBF00ABA374 /* Build configuration list for PBXProject "StarlingHomeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22CA8032A323EC500ABA374 /* Debug */,
+				E22CA8042A323EC500ABA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22CA8052A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22CA8062A323EC500ABA374 /* Debug */,
+				E22CA8072A323EC500ABA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22CA8082A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22CA8092A323EC500ABA374 /* Debug */,
+				E22CA80A2A323EC500ABA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22CA80B2A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22CA80C2A323EC500ABA374 /* Debug */,
+				E22CA80D2A323EC500ABA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E22CA7D32A323EBF00ABA374 /* Project object */;
+}
