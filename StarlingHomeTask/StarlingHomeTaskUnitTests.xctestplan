@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "6A73ABCD-1B7A-4AD0-B8F8-4C432F5B62E0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StarlingHomeTask.xcodeproj",
+      "identifier" : "E22CA7DA2A323EBF00ABA374",
+      "name" : "StarlingHomeTask"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:StarlingHomeTask.xcodeproj",
+        "identifier" : "E22CA7F02A323EC500ABA374",
+        "name" : "StarlingHomeTaskTests"
+      }
+    }
+  ],
+  "version" : 1
+}

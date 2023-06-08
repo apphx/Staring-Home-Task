@@ -15,6 +15,15 @@
 		E22CA7F62A323EC500ABA374 /* StarlingHomeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7F52A323EC500ABA374 /* StarlingHomeTaskTests.swift */; };
 		E22CA8002A323EC500ABA374 /* StarlingHomeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */; };
 		E22CA8022A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */; };
+		E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8122A3248C000ABA374 /* NetworkingClient.swift */; };
+		E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8152A3249A200ABA374 /* Cancellable.swift */; };
+		E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8172A324A0800ABA374 /* Result+Utils.swift */; };
+		E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8192A324ED300ABA374 /* ApiError.swift */; };
+		E22CA81E2A324F8700ABA374 /* NetworkingClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA81D2A324F8700ABA374 /* NetworkingClientMock.swift */; };
+		E22CA8202A32503E00ABA374 /* CancellableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA81F2A32503E00ABA374 /* CancellableMock.swift */; };
+		E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8252A325A4500ABA374 /* KeychainClient.swift */; };
+		E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8272A325BA900ABA374 /* KeychainError.swift */; };
+		E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8292A3269F100ABA374 /* KeychainMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,17 @@
 		E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingHomeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskUITests.swift; sourceTree = "<group>"; };
 		E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E22CA8122A3248C000ABA374 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		E22CA8152A3249A200ABA374 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		E22CA8172A324A0800ABA374 /* Result+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Utils.swift"; sourceTree = "<group>"; };
+		E22CA8192A324ED300ABA374 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		E22CA81D2A324F8700ABA374 /* NetworkingClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClientMock.swift; sourceTree = "<group>"; };
+		E22CA81F2A32503E00ABA374 /* CancellableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableMock.swift; sourceTree = "<group>"; };
+		E22CA8252A325A4500ABA374 /* KeychainClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainClient.swift; sourceTree = "<group>"; };
+		E22CA8272A325BA900ABA374 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		E22CA8292A3269F100ABA374 /* KeychainMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainMock.swift; sourceTree = "<group>"; };
+		E22CA82B2A326EBA00ABA374 /* StarlingHomeTaskUnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StarlingHomeTaskUnitTests.xctestplan; sourceTree = "<group>"; };
+		E22CA82C2A326EE200ABA374 /* StarlingHomeTaskUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = StarlingHomeTaskUITests.xctestplan; path = ../StarlingHomeTaskUITests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +97,8 @@
 		E22CA7D22A323EBF00ABA374 = {
 			isa = PBXGroup;
 			children = (
+				E22CA82B2A326EBA00ABA374 /* StarlingHomeTaskUnitTests.xctestplan */,
+				E22CA82C2A326EE200ABA374 /* StarlingHomeTaskUITests.xctestplan */,
 				E22CA7DD2A323EC000ABA374 /* StarlingHomeTask */,
 				E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */,
 				E22CA7FE2A323EC500ABA374 /* StarlingHomeTaskUITests */,
@@ -97,12 +119,10 @@
 		E22CA7DD2A323EC000ABA374 /* StarlingHomeTask */ = {
 			isa = PBXGroup;
 			children = (
-				E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */,
-				E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */,
-				E22CA7E22A323EC000ABA374 /* ViewController.swift */,
-				E22CA7E72A323EC400ABA374 /* Assets.xcassets */,
-				E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */,
+				E22CA8102A32489500ABA374 /* Business */,
 				E22CA7EC2A323EC400ABA374 /* Info.plist */,
+				E22CA80F2A32486C00ABA374 /* Resources */,
+				E22CA80E2A32486000ABA374 /* Interface */,
 			);
 			path = StarlingHomeTask;
 			sourceTree = "<group>";
@@ -110,6 +130,7 @@
 		E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA81C2A324F7600ABA374 /* Mocks */,
 				E22CA7F52A323EC500ABA374 /* StarlingHomeTaskTests.swift */,
 			);
 			path = StarlingHomeTaskTests;
@@ -122,6 +143,88 @@
 				E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */,
 			);
 			path = StarlingHomeTaskUITests;
+			sourceTree = "<group>";
+		};
+		E22CA80E2A32486000ABA374 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */,
+				E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */,
+				E22CA7E22A323EC000ABA374 /* ViewController.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		E22CA80F2A32486C00ABA374 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA7E72A323EC400ABA374 /* Assets.xcassets */,
+				E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E22CA8102A32489500ABA374 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA81B2A324F4700ABA374 /* Native */,
+				E22CA8142A32497C00ABA374 /* Utils */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		E22CA8112A32489F00ABA374 /* NetworkingClient */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8122A3248C000ABA374 /* NetworkingClient.swift */,
+				E22CA8192A324ED300ABA374 /* ApiError.swift */,
+			);
+			path = NetworkingClient;
+			sourceTree = "<group>";
+		};
+		E22CA8142A32497C00ABA374 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8232A3259D900ABA374 /* Models */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E22CA81B2A324F4700ABA374 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8242A325A2800ABA374 /* KeychainClient */,
+				E22CA8112A32489F00ABA374 /* NetworkingClient */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		E22CA81C2A324F7600ABA374 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA81D2A324F8700ABA374 /* NetworkingClientMock.swift */,
+				E22CA81F2A32503E00ABA374 /* CancellableMock.swift */,
+				E22CA8292A3269F100ABA374 /* KeychainMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E22CA8232A3259D900ABA374 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8152A3249A200ABA374 /* Cancellable.swift */,
+				E22CA8172A324A0800ABA374 /* Result+Utils.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E22CA8242A325A2800ABA374 /* KeychainClient */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8252A325A4500ABA374 /* KeychainClient.swift */,
+				E22CA8272A325BA900ABA374 /* KeychainError.swift */,
+			);
+			path = KeychainClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +357,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */,
+				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
+				E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */,
+				E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */,
 				E22CA7E32A323EC000ABA374 /* ViewController.swift in Sources */,
 				E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */,
+				E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */,
+				E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */,
 				E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22CA8202A32503E00ABA374 /* CancellableMock.swift in Sources */,
+				E22CA81E2A324F8700ABA374 /* NetworkingClientMock.swift in Sources */,
 				E22CA7F62A323EC500ABA374 /* StarlingHomeTaskTests.swift in Sources */,
+				E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,9 +605,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarlingHomeTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarlingHomeTask";
 			};
 			name = Debug;
@@ -513,9 +628,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarlingHomeTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarlingHomeTask";
 			};
 			name = Release;
@@ -531,9 +649,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = StarlingHomeTask;
 			};
 			name = Debug;
@@ -549,9 +670,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = StarlingHomeTask;
 			};
 			name = Release;
