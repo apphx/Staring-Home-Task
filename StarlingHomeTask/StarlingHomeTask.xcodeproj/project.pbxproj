@@ -69,6 +69,11 @@
 		E2C61CE52A3375E800D45EE0 /* Money+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE42A3375E800D45EE0 /* Money+Utils.swift */; };
 		E2C61CE72A3382DE00D45EE0 /* RoundUpScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE62A3382DE00D45EE0 /* RoundUpScreenInteractor.swift */; };
 		E2C61CE92A3384A900D45EE0 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE82A3384A900D45EE0 /* Array+Utils.swift */; };
+		E2C61CEC2A338B7400D45EE0 /* SavingsGoalApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CEB2A338B7400D45EE0 /* SavingsGoalApiService.swift */; };
+		E2C61CEF2A338B9000D45EE0 /* AddMoneyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CEE2A338B9000D45EE0 /* AddMoneyResponse.swift */; };
+		E2C61CF12A338C1C00D45EE0 /* SpacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF02A338C1C00D45EE0 /* SpacesResponse.swift */; };
+		E2C61CF32A338C2500D45EE0 /* SavingsGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF22A338C2500D45EE0 /* SavingsGoal.swift */; };
+		E2C61CF52A338DF000D45EE0 /* AddMoneyBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF42A338DF000D45EE0 /* AddMoneyBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +162,11 @@
 		E2C61CE42A3375E800D45EE0 /* Money+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Money+Utils.swift"; sourceTree = "<group>"; };
 		E2C61CE62A3382DE00D45EE0 /* RoundUpScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpScreenInteractor.swift; sourceTree = "<group>"; };
 		E2C61CE82A3384A900D45EE0 /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
+		E2C61CEB2A338B7400D45EE0 /* SavingsGoalApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoalApiService.swift; sourceTree = "<group>"; };
+		E2C61CEE2A338B9000D45EE0 /* AddMoneyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyResponse.swift; sourceTree = "<group>"; };
+		E2C61CF02A338C1C00D45EE0 /* SpacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesResponse.swift; sourceTree = "<group>"; };
+		E2C61CF22A338C2500D45EE0 /* SavingsGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoal.swift; sourceTree = "<group>"; };
+		E2C61CF42A338DF000D45EE0 /* AddMoneyBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +344,7 @@
 		E22CA8352A32729500ABA374 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E2C61CEA2A338B5D00D45EE0 /* SavingsGoalsApiService */,
 				E2C61CD22A33698D00D45EE0 /* FeedApiService */,
 				E22CA8512A3285E900ABA374 /* AccountsApiService */,
 				E22CA8342A32728A00ABA374 /* AuthorizationService */,
@@ -413,6 +424,7 @@
 				E2C61CD82A336A3300D45EE0 /* Money.swift */,
 				E2C61CD62A3369A900D45EE0 /* FeedItem.swift */,
 				E22CA8552A3287B700ABA374 /* Account.swift */,
+				E2C61CF22A338C2500D45EE0 /* SavingsGoal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -554,6 +566,25 @@
 			path = RoundUpScreen;
 			sourceTree = "<group>";
 		};
+		E2C61CEA2A338B5D00D45EE0 /* SavingsGoalsApiService */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CED2A338B7C00D45EE0 /* Models */,
+				E2C61CEB2A338B7400D45EE0 /* SavingsGoalApiService.swift */,
+			);
+			path = SavingsGoalsApiService;
+			sourceTree = "<group>";
+		};
+		E2C61CED2A338B7C00D45EE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CEE2A338B9000D45EE0 /* AddMoneyResponse.swift */,
+				E2C61CF02A338C1C00D45EE0 /* SpacesResponse.swift */,
+				E2C61CF42A338DF000D45EE0 /* AddMoneyBody.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -691,6 +722,8 @@
 				E2C61CE92A3384A900D45EE0 /* Array+Utils.swift in Sources */,
 				E22CA8332A32700B00ABA374 /* AuthorizationService.swift in Sources */,
 				E22CA8562A3287B700ABA374 /* Account.swift in Sources */,
+				E2C61CEC2A338B7400D45EE0 /* SavingsGoalApiService.swift in Sources */,
+				E2C61CF52A338DF000D45EE0 /* AddMoneyBody.swift in Sources */,
 				E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */,
 				E2C61CBB2A33268200D45EE0 /* Cell.swift in Sources */,
 				E2C61CDB2A336A6C00D45EE0 /* FeedResponse.swift in Sources */,
@@ -704,6 +737,7 @@
 				E2C61CDE2A33734F00D45EE0 /* RoundUpFlow.swift in Sources */,
 				E2C61CE12A33739100D45EE0 /* RoundUpViewController.swift in Sources */,
 				E2C61CD92A336A3300D45EE0 /* Money.swift in Sources */,
+				E2C61CF32A338C2500D45EE0 /* SavingsGoal.swift in Sources */,
 				E2C61CD42A33699A00D45EE0 /* FeedApiService.swift in Sources */,
 				E22CA8662A3291FC00ABA374 /* AuthorizationViewController.swift in Sources */,
 				E2C61CE52A3375E800D45EE0 /* Money+Utils.swift in Sources */,
@@ -716,11 +750,13 @@
 				E22CA8592A32899700ABA374 /* AccountsResponse.swift in Sources */,
 				E22CA85F2A3290AD00ABA374 /* HomeViewController.swift in Sources */,
 				E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */,
+				E2C61CEF2A338B9000D45EE0 /* AddMoneyResponse.swift in Sources */,
 				E22CA8692A3299AA00ABA374 /* Button.swift in Sources */,
 				E22CA85C2A328BCB00ABA374 /* URLRequestFactory.swift in Sources */,
 				E22CA8722A329D7600ABA374 /* UIView+Constraints.swift in Sources */,
 				E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */,
 				E22CA8642A3291E600ABA374 /* AuthorizationViewModel.swift in Sources */,
+				E2C61CF12A338C1C00D45EE0 /* SpacesResponse.swift in Sources */,
 				E2C61CE32A33744200D45EE0 /* RoundUpViewModel.swift in Sources */,
 				E22CA8452A32798600ABA374 /* AuthorizationMiddleware.swift in Sources */,
 			);

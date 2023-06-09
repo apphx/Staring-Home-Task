@@ -10,7 +10,8 @@ import Foundation
 final class RoundUpViewModel {
     private let account: Account
     private let screenInteractor: RoundUpScreenInteractorProtocol
-    private var indempotencyKey: String = ""
+    private let onCompletion: () -> Void
+    private var idempotencyKey: String = ""
     private var lastRoundUp: Money?
 
     private(set) var cells = [Cell.Model]()
@@ -21,10 +22,12 @@ final class RoundUpViewModel {
 
     init(
         account: Account,
-        screenInteractor: RoundUpScreenInteractorProtocol
+        screenInteractor: RoundUpScreenInteractorProtocol,
+        onCompletion: @escaping () -> Void
     ) {
         self.account = account
         self.screenInteractor = screenInteractor
+        self.onCompletion = onCompletion
     }
 
     func viewDidLoad() {
@@ -52,8 +55,8 @@ private extension RoundUpViewModel {
             title: "Round up: \(lastRoundUp?.localizedDescription() ?? "-")",
             titleColor: .white,
             backgroundColor: .blue
-        ) {
-            print("round up")
+        ) { [weak self] in
+            self?.roundUp()
         }
     }
 
@@ -98,10 +101,27 @@ private extension RoundUpViewModel {
             switch result {
             case let .success(feedItems):
                 self?.reloadWithContent(feedItems: feedItems.outgoingItems())
-                self?.indempotencyKey = UUID().uuidString
+                self?.idempotencyKey = UUID().uuidString
             case let .failure(error):
                 print(error)
                 // would need proper error state, but for simplicity purposes it will be silenced
+            }
+        }
+    }
+
+    func roundUp() {
+        guard let lastRoundUp else { return }
+        screenInteractor.roundUp(
+            idempotencyKey: idempotencyKey,
+            accountId: account.accountUid,
+            money: lastRoundUp
+        ) { [weak self] result in
+            switch result {
+            case .success:
+                self?.onCompletion()
+            case let .failure(error):
+                print(error)
+                // handle error
             }
         }
     }

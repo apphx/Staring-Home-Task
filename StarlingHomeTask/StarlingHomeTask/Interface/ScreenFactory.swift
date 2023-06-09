@@ -25,7 +25,8 @@ final class ScreenFactory: ScreenFactoryProtocol {
     func makeRoundUpScreen(account: Account, onCompletion: @escaping () -> Void) -> UIViewController {
         let viewModel = RoundUpViewModel(
             account: account,
-            screenInteractor: RoundUpScreenInteractor()
+            screenInteractor: RoundUpScreenInteractor(),
+            onCompletion: onCompletion
         )
         return RoundUpViewController(viewModel: viewModel)
     }

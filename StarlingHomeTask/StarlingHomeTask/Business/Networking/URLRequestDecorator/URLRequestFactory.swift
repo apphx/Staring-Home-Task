@@ -29,8 +29,9 @@ extension URLRequest {
             request = URLRequest(url: components.url!)
             guard let bodyData = try? JSONEncoder().encode(body) else { break }
             request.httpBody = bodyData
-            request.addValue("application/json", forHTTPHeaderField: "ContentType")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         }
+        request.httpMethod = httpMethod.rawValue
 
         return request
     }
