@@ -21,21 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         } else {
             self.window = UIWindow()
-            self.window?.rootViewController = UINavigationController(rootViewController: HomeViewController(viewModel: .init()))
+            let rootNav = UINavigationController()
+            self.window?.rootViewController = rootNav
             self.window?.makeKeyAndVisible()
+            FlowLauncher().runHomeFlow(navigationController: rootNav)
 
             // one option for this navigation logic to be tested is via UI tests
             authorizationService = AuthorizationService()
             authorizationService.subscribeAuthorizationChanged { [weak self] authorized in
-                let rootNav = self?.window?.rootViewController as? UINavigationController
-
                 if authorized {
-                    if rootNav?.presentedViewController is AuthorizationViewController {
-                        rootNav?.presentedViewController?.dismiss(animated: true)
+                    if rootNav.presentedViewController is AuthorizationViewController {
+                        rootNav.presentedViewController?.dismiss(animated: true)
                     }
                 } else {
-                    if rootNav?.presentedViewController is AuthorizationViewController { return }
-                    rootNav?.popToRootViewController(animated: false)
+                    if rootNav.presentedViewController is AuthorizationViewController { return }
+                    rootNav.popToRootViewController(animated: false)
 
                     let authController = AuthorizationViewController(viewModel: .init())
                     authController.modalPresentationStyle = .fullScreen

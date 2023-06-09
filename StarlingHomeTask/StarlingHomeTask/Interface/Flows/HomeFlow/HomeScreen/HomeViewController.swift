@@ -51,6 +51,7 @@ private extension HomeViewController {
         title = viewModel.title
         view.backgroundColor = .white
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(reusableCell: Reusable<Cell>())
     }
 
@@ -76,5 +77,13 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeue(reusableCell: Reusable<Cell>(), indexPath: indexPath)
         cell.update(with: model)
         return cell
+    }
+}
+
+// MARK: - Delegate
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.model(at: indexPath).onTap?()
     }
 }

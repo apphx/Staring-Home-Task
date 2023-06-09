@@ -12,17 +12,21 @@ final class HomeViewModelTests: XCTestCase {
     private var accountsService: AccountsApiServiceMock!
     private var authorizaitonService: AuthorizationServiceMock!
     private var onReloadCount: Int!
+    private var onAction: [HomeViewModel.Action]!
     private var sut: HomeViewModel!
 
     override func setUp() {
         accountsService = .init()
         authorizaitonService = .init()
         onReloadCount = 0
+        onAction = []
 
         sut = .init(
             accountsService: accountsService,
             authorizationService: authorizaitonService
-        )
+        ) { [weak self] action in
+            self?.onAction.append(action)
+        }
         sut.onReload = { [weak self] in
             self?.onReloadCount += 1
         }
@@ -71,6 +75,27 @@ final class HomeViewModelTests: XCTestCase {
             sut.model(at: .init(row: $0, section: 0))
         }
         XCTAssertEqual(cellModels, expectedModels)
+    }
+
+    func testDataSource_whenAnAccountIsTapped_itRequestsCorrectAction() {
+        let accounts: [Account] = [
+            .sample(),
+            .sample(
+                accountUid: UUID().uuidString,
+                accountType: .additional,
+                currency: UUID().uuidString,
+                name: UUID().uuidString
+            )
+        ]
+        accountsService.getAccountsResult = .success(accounts)
+
+        sut.viewDidLoad()
+        (0...1).forEach {
+            sut.model(at: .init(row: $0, section: 0)).onTap?()
+        }
+
+        let expectedActions = accounts.map { HomeViewModel.Action.didTapAccount($0) }
+        XCTAssertEqual(onAction, expectedActions)
     }
 
     func testDataSource_whenAuthorizationChangesAndSuccessfull_itRefreshesAccounts() {

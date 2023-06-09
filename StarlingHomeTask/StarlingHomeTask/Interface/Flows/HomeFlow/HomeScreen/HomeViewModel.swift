@@ -8,8 +8,12 @@
 import Foundation
 
 final class HomeViewModel {
+    enum Action: Equatable {
+        case didTapAccount(Account)
+    }
     private let accountsService: AccountsApiServiceProtocol
     private let authorizationService: AuthorizationServiceProtocol
+    private let onAction: (Action) -> Void
 
     private(set) var cells = [Cell.Model]()
     let title = "Accounts"
@@ -18,17 +22,12 @@ final class HomeViewModel {
 
     init(
         accountsService: AccountsApiServiceProtocol,
-        authorizationService: AuthorizationServiceProtocol
+        authorizationService: AuthorizationServiceProtocol,
+        onAction: @escaping (Action) -> Void
     ) {
         self.accountsService = accountsService
         self.authorizationService = authorizationService
-    }
-
-    convenience init() {
-        self.init(
-            accountsService: AccountsApiService(),
-            authorizationService: AuthorizationService()
-        )
+        self.onAction = onAction
     }
 
     func viewDidLoad() {
@@ -53,11 +52,13 @@ extension HomeViewModel {
 
 private extension HomeViewModel {
     func makeAccountsModels(for accounts: [Account]) -> [Cell.Model] {
-        accounts.map {
+        accounts.map { account in
             Cell.Model(
-                title: .init(text: $0.name),
-                subtitle: .init(text: "Currency: \($0.currency)")
-            )
+                title: .init(text: account.name),
+                subtitle: .init(text: "Currency: \(account.currency)")
+            ) { [weak self] in
+                self?.onAction(.didTapAccount(account))
+            }
         }
     }
 

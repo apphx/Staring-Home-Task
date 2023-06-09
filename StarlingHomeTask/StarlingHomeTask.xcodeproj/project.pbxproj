@@ -53,6 +53,12 @@
 		E2C61CBF2A332B9A00D45EE0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CBE2A332B9A00D45EE0 /* Reusable.swift */; };
 		E2C61CC12A3341AB00D45EE0 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CC02A3341AB00D45EE0 /* HomeViewModelTests.swift */; };
 		E2C61CC32A3342E700D45EE0 /* AccountsApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CC22A3342E700D45EE0 /* AccountsApiServiceMock.swift */; };
+		E2C61CC62A334A4B00D45EE0 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CC52A334A4B00D45EE0 /* HomeFlow.swift */; };
+		E2C61CC92A334B6C00D45EE0 /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CC82A334B6C00D45EE0 /* ScreenFactory.swift */; };
+		E2C61CCB2A334DCA00D45EE0 /* FlowLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CCA2A334DCA00D45EE0 /* FlowLauncher.swift */; };
+		E2C61CCD2A33516100D45EE0 /* HomeFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CCC2A33516100D45EE0 /* HomeFlowTests.swift */; };
+		E2C61CCF2A33516B00D45EE0 /* FlowLauncherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CCE2A33516B00D45EE0 /* FlowLauncherMock.swift */; };
+		E2C61CD12A33522100D45EE0 /* ScreenFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CD02A33522100D45EE0 /* ScreenFactoryMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +131,12 @@
 		E2C61CBE2A332B9A00D45EE0 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		E2C61CC02A3341AB00D45EE0 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		E2C61CC22A3342E700D45EE0 /* AccountsApiServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApiServiceMock.swift; sourceTree = "<group>"; };
+		E2C61CC52A334A4B00D45EE0 /* HomeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
+		E2C61CC82A334B6C00D45EE0 /* ScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
+		E2C61CCA2A334DCA00D45EE0 /* FlowLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLauncher.swift; sourceTree = "<group>"; };
+		E2C61CCC2A33516100D45EE0 /* HomeFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowTests.swift; sourceTree = "<group>"; };
+		E2C61CCE2A33516B00D45EE0 /* FlowLauncherMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLauncherMock.swift; sourceTree = "<group>"; };
+		E2C61CD02A33522100D45EE0 /* ScreenFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactoryMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,11 +220,13 @@
 		E22CA80E2A32486000ABA374 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				E2C61CC42A334A4200D45EE0 /* Flows */,
 				E22CA86F2A329D5500ABA374 /* UI */,
 				E22CA8622A3291BE00ABA374 /* AuthorizationScreen */,
-				E22CA85D2A32909F00ABA374 /* HomeScreen */,
 				E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */,
 				E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */,
+				E2C61CC82A334B6C00D45EE0 /* ScreenFactory.swift */,
+				E2C61CCA2A334DCA00D45EE0 /* FlowLauncher.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -265,6 +279,8 @@
 				E22CA8292A3269F100ABA374 /* KeychainMock.swift */,
 				E22CA83A2A32730200ABA374 /* AuthorizationServiceMock.swift */,
 				E2C61CC22A3342E700D45EE0 /* AccountsApiServiceMock.swift */,
+				E2C61CCE2A33516B00D45EE0 /* FlowLauncherMock.swift */,
+				E2C61CD02A33522100D45EE0 /* ScreenFactoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -458,6 +474,24 @@
 			path = "UIComponents+Equatable";
 			sourceTree = "<group>";
 		};
+		E2C61CC42A334A4200D45EE0 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CC72A334B5600D45EE0 /* HomeFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		E2C61CC72A334B5600D45EE0 /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA85D2A32909F00ABA374 /* HomeScreen */,
+				E2C61CC52A334A4B00D45EE0 /* HomeFlow.swift */,
+				E2C61CCC2A33516100D45EE0 /* HomeFlowTests.swift */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -590,6 +624,7 @@
 			files = (
 				E22CA8612A3290B500ABA374 /* HomeViewModel.swift in Sources */,
 				E22CA86E2A329BC300ABA374 /* TextField.swift in Sources */,
+				E2C61CC92A334B6C00D45EE0 /* ScreenFactory.swift in Sources */,
 				E22CA8332A32700B00ABA374 /* AuthorizationService.swift in Sources */,
 				E22CA8562A3287B700ABA374 /* Account.swift in Sources */,
 				E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */,
@@ -599,8 +634,10 @@
 				E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */,
 				E2C61CBD2A33280500D45EE0 /* Label.swift in Sources */,
 				E22CA86C2A329B0100ABA374 /* IgnoreEquatable.swift in Sources */,
+				E2C61CCB2A334DCA00D45EE0 /* FlowLauncher.swift in Sources */,
 				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
 				E22CA8662A3291FC00ABA374 /* AuthorizationViewController.swift in Sources */,
+				E2C61CC62A334A4B00D45EE0 /* HomeFlow.swift in Sources */,
 				E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */,
 				E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */,
 				E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */,
@@ -622,9 +659,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C61CB82A32AE6600D45EE0 /* UIComponents+Equatable.swift in Sources */,
+				E2C61CCF2A33516B00D45EE0 /* FlowLauncherMock.swift in Sources */,
 				E22CA8202A32503E00ABA374 /* CancellableMock.swift in Sources */,
 				E22CA8402A32756E00ABA374 /* Assert+Utils.swift in Sources */,
 				E22CA81E2A324F8700ABA374 /* NetworkingClientMock.swift in Sources */,
+				E2C61CD12A33522100D45EE0 /* ScreenFactoryMock.swift in Sources */,
 				E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */,
 				E2C61CC12A3341AB00D45EE0 /* HomeViewModelTests.swift in Sources */,
 				E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */,
@@ -637,6 +676,7 @@
 				E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */,
 				E2C61CB12A32AAB300D45EE0 /* AccountsApiServiceTests.swift in Sources */,
 				E22CA83D2A3273CA00ABA374 /* AuthorizationServiceTests.swift in Sources */,
+				E2C61CCD2A33516100D45EE0 /* HomeFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
