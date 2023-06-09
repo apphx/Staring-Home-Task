@@ -10,4 +10,5 @@ import Foundation
 enum ApiError: Error {
     case httpFailure(code: Int)
     case genericError
+    case iso8601DateDecodingFailure
 }

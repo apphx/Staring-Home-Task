@@ -10,20 +10,16 @@ import XCTest
 
 final class AuthorizationMiddlewareTests: XCTestCase {
     private var service: AuthorizationServiceMock!
-    private var notificationCenter: NotificationCenter!
     private var sut: AuthorizationMiddleware!
 
     override func setUp() {
-        notificationCenter = .default
         service = .init()
         sut = .init(
-            service: service,
-            notificationCenter: notificationCenter
+            service: service
         )
     }
 
     override func tearDown() {
-        notificationCenter = nil
         service = nil
         sut = nil
     }
@@ -59,45 +55,15 @@ final class AuthorizationMiddlewareTests: XCTestCase {
         XCTAssertEqual(request, authorizedRequest)
     }
 
-    func testValidate_whenResponseStatusCodeIs403_itThrowsUnauthorizedError() {
+    func testValidate_whenResponseStatusCodeIs403_itThrowsUnauthorizedErrorAndUpdatesTokenWithEmptyString() {
         let response = HTTPURLResponse.sample(statusCode: 403)
+
+        service.updateAuthorizationTokenResult = .success
 
         XCTAssertThrowsError(try sut.validate(response: response)) { error in
             XCTAssertEqual(error as NSError, AuthorizationMiddleware.Error.unauthorized as NSError)
         }
-    }
+        XCTAssertEqual(service.updateAuthorizationTokenToken, [""])
 
-    func testValidate_whenResponseStatusCodeIs403_itEmitsUnauthorizedNotification() {
-        let response = HTTPURLResponse.sample(statusCode: 403)
-        let expectation = XCTestExpectation()
-
-        notificationCenter.addObserver(forName: .unauthorizedRequest, object: nil, queue: nil) { _ in
-            expectation.fulfill()
-        }
-
-        try? sut.validate(response: response)
-
-        wait(for: [expectation], timeout: 1)
-    }
-
-    func testValidate_whenResponseStatusCodeIs403_otherSubscribersGetTriggered() {
-        let response = HTTPURLResponse.sample(statusCode: 403)
-        let expectation = XCTestExpectation()
-        expectation.expectedFulfillmentCount = 2
-
-        let listeners = [
-            AuthorizationMiddleware(service: service, notificationCenter: notificationCenter),
-            AuthorizationMiddleware(service: service, notificationCenter: notificationCenter)
-        ]
-
-        listeners.forEach { middleware in
-            middleware.subscribeUnauthorizedRequestIdentified {
-                expectation.fulfill()
-            }
-        }
-
-        try? sut.validate(response: response)
-
-        wait(for: [expectation], timeout: 1)
     }
 }

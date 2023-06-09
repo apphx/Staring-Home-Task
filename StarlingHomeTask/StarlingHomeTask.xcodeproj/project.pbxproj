@@ -32,6 +32,22 @@
 		E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */; };
 		E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */; };
 		E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA84E2A32825E00ABA374 /* NotificationName+Utils.swift */; };
+		E22CA8532A32875A00ABA374 /* AccountsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8522A32875A00ABA374 /* AccountsApiService.swift */; };
+		E22CA8562A3287B700ABA374 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8552A3287B700ABA374 /* Account.swift */; };
+		E22CA8592A32899700ABA374 /* AccountsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8582A32899700ABA374 /* AccountsResponse.swift */; };
+		E22CA85C2A328BCB00ABA374 /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA85B2A328BCB00ABA374 /* URLRequestFactory.swift */; };
+		E22CA85F2A3290AD00ABA374 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA85E2A3290AD00ABA374 /* HomeViewController.swift */; };
+		E22CA8612A3290B500ABA374 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8602A3290B500ABA374 /* HomeViewModel.swift */; };
+		E22CA8642A3291E600ABA374 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8632A3291E600ABA374 /* AuthorizationViewModel.swift */; };
+		E22CA8662A3291FC00ABA374 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8652A3291FC00ABA374 /* AuthorizationViewController.swift */; };
+		E22CA8692A3299AA00ABA374 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8682A3299AA00ABA374 /* Button.swift */; };
+		E22CA86C2A329B0100ABA374 /* IgnoreEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA86B2A329B0100ABA374 /* IgnoreEquatable.swift */; };
+		E22CA86E2A329BC300ABA374 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA86D2A329BC300ABA374 /* TextField.swift */; };
+		E22CA8722A329D7600ABA374 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8712A329D7600ABA374 /* UIView+Constraints.swift */; };
+		E2C61CB12A32AAB300D45EE0 /* AccountsApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB02A32AAB300D45EE0 /* AccountsApiServiceTests.swift */; };
+		E2C61CB32A32AB9200D45EE0 /* Account+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB22A32AB9200D45EE0 /* Account+Sample.swift */; };
+		E2C61CB52A32AE0200D45EE0 /* AuthorizationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB42A32AE0200D45EE0 /* AuthorizationViewModelTests.swift */; };
+		E2C61CB82A32AE6600D45EE0 /* UIComponents+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB72A32AE6600D45EE0 /* UIComponents+Equatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +99,22 @@
 		E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPUrlResponse+Sample.swift"; sourceTree = "<group>"; };
 		E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Sample.swift"; sourceTree = "<group>"; };
 		E22CA84E2A32825E00ABA374 /* NotificationName+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Utils.swift"; sourceTree = "<group>"; };
+		E22CA8522A32875A00ABA374 /* AccountsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApiService.swift; sourceTree = "<group>"; };
+		E22CA8552A3287B700ABA374 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E22CA8582A32899700ABA374 /* AccountsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsResponse.swift; sourceTree = "<group>"; };
+		E22CA85B2A328BCB00ABA374 /* URLRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
+		E22CA85E2A3290AD00ABA374 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E22CA8602A3290B500ABA374 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E22CA8632A3291E600ABA374 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		E22CA8652A3291FC00ABA374 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		E22CA8682A3299AA00ABA374 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		E22CA86B2A329B0100ABA374 /* IgnoreEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreEquatable.swift; sourceTree = "<group>"; };
+		E22CA86D2A329BC300ABA374 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		E22CA8712A329D7600ABA374 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		E2C61CB02A32AAB300D45EE0 /* AccountsApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApiServiceTests.swift; sourceTree = "<group>"; };
+		E2C61CB22A32AB9200D45EE0 /* Account+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+Sample.swift"; sourceTree = "<group>"; };
+		E2C61CB42A32AE0200D45EE0 /* AuthorizationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModelTests.swift; sourceTree = "<group>"; };
+		E2C61CB72A32AE6600D45EE0 /* UIComponents+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIComponents+Equatable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +178,7 @@
 		E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2C61CB62A32AE5100D45EE0 /* UIComponents+Equatable */,
 				E22CA8492A327EFC00ABA374 /* Samples */,
 				E22CA83E2A32756000ABA374 /* Utils */,
 				E22CA81C2A324F7600ABA374 /* Mocks */,
@@ -165,6 +198,9 @@
 		E22CA80E2A32486000ABA374 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA86F2A329D5500ABA374 /* UI */,
+				E22CA8622A3291BE00ABA374 /* AuthorizationScreen */,
+				E22CA85D2A32909F00ABA374 /* HomeScreen */,
 				E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */,
 				E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */,
 			);
@@ -183,6 +219,7 @@
 		E22CA8102A32489500ABA374 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA8542A32878400ABA374 /* Models */,
 				E22CA8382A3272C400ABA374 /* Storage */,
 				E22CA8372A3272BB00ABA374 /* Networking */,
 				E22CA8352A32729500ABA374 /* Services */,
@@ -203,6 +240,7 @@
 		E22CA8142A32497C00ABA374 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA86A2A329AF400ABA374 /* PropertyWrappers */,
 				E22CA8462A327A0A00ABA374 /* Extensions */,
 				E22CA8232A3259D900ABA374 /* Models */,
 			);
@@ -249,6 +287,7 @@
 		E22CA8352A32729500ABA374 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA8512A3285E900ABA374 /* AccountsApiService */,
 				E22CA8342A32728A00ABA374 /* AuthorizationService */,
 			);
 			path = Services;
@@ -257,6 +296,7 @@
 		E22CA8372A3272BB00ABA374 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E22CA85A2A328BA300ABA374 /* URLRequestDecorator */,
 				E22CA8432A32796F00ABA374 /* AuthorizationMiddleware */,
 				E22CA8112A32489F00ABA374 /* NetworkingClient */,
 			);
@@ -303,8 +343,104 @@
 			children = (
 				E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */,
 				E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */,
+				E2C61CB22A32AB9200D45EE0 /* Account+Sample.swift */,
 			);
 			path = Samples;
+			sourceTree = "<group>";
+		};
+		E22CA8512A3285E900ABA374 /* AccountsApiService */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8572A32898A00ABA374 /* Models */,
+				E22CA8522A32875A00ABA374 /* AccountsApiService.swift */,
+				E2C61CB02A32AAB300D45EE0 /* AccountsApiServiceTests.swift */,
+			);
+			path = AccountsApiService;
+			sourceTree = "<group>";
+		};
+		E22CA8542A32878400ABA374 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8552A3287B700ABA374 /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E22CA8572A32898A00ABA374 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8582A32899700ABA374 /* AccountsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E22CA85A2A328BA300ABA374 /* URLRequestDecorator */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA85B2A328BCB00ABA374 /* URLRequestFactory.swift */,
+			);
+			path = URLRequestDecorator;
+			sourceTree = "<group>";
+		};
+		E22CA85D2A32909F00ABA374 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA85E2A3290AD00ABA374 /* HomeViewController.swift */,
+				E22CA8602A3290B500ABA374 /* HomeViewModel.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E22CA8622A3291BE00ABA374 /* AuthorizationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8632A3291E600ABA374 /* AuthorizationViewModel.swift */,
+				E22CA8652A3291FC00ABA374 /* AuthorizationViewController.swift */,
+				E2C61CB42A32AE0200D45EE0 /* AuthorizationViewModelTests.swift */,
+			);
+			path = AuthorizationScreen;
+			sourceTree = "<group>";
+		};
+		E22CA8672A32999A00ABA374 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8682A3299AA00ABA374 /* Button.swift */,
+				E22CA86D2A329BC300ABA374 /* TextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E22CA86A2A329AF400ABA374 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA86B2A329B0100ABA374 /* IgnoreEquatable.swift */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		E22CA86F2A329D5500ABA374 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8702A329D6200ABA374 /* Constraints */,
+				E22CA8672A32999A00ABA374 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E22CA8702A329D6200ABA374 /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				E22CA8712A329D7600ABA374 /* UIView+Constraints.swift */,
+			);
+			path = Constraints;
+			sourceTree = "<group>";
+		};
+		E2C61CB62A32AE5100D45EE0 /* UIComponents+Equatable */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CB72A32AE6600D45EE0 /* UIComponents+Equatable.swift */,
+			);
+			path = "UIComponents+Equatable";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,16 +573,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22CA8612A3290B500ABA374 /* HomeViewModel.swift in Sources */,
+				E22CA86E2A329BC300ABA374 /* TextField.swift in Sources */,
 				E22CA8332A32700B00ABA374 /* AuthorizationService.swift in Sources */,
+				E22CA8562A3287B700ABA374 /* Account.swift in Sources */,
 				E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */,
+				E22CA8532A32875A00ABA374 /* AccountsApiService.swift in Sources */,
 				E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */,
+				E22CA86C2A329B0100ABA374 /* IgnoreEquatable.swift in Sources */,
 				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
+				E22CA8662A3291FC00ABA374 /* AuthorizationViewController.swift in Sources */,
 				E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */,
 				E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */,
 				E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */,
 				E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */,
+				E22CA8592A32899700ABA374 /* AccountsResponse.swift in Sources */,
+				E22CA85F2A3290AD00ABA374 /* HomeViewController.swift in Sources */,
 				E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */,
+				E22CA8692A3299AA00ABA374 /* Button.swift in Sources */,
+				E22CA85C2A328BCB00ABA374 /* URLRequestFactory.swift in Sources */,
+				E22CA8722A329D7600ABA374 /* UIView+Constraints.swift in Sources */,
 				E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */,
+				E22CA8642A3291E600ABA374 /* AuthorizationViewModel.swift in Sources */,
 				E22CA8452A32798600ABA374 /* AuthorizationMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,15 +603,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C61CB82A32AE6600D45EE0 /* UIComponents+Equatable.swift in Sources */,
 				E22CA8202A32503E00ABA374 /* CancellableMock.swift in Sources */,
 				E22CA8402A32756E00ABA374 /* Assert+Utils.swift in Sources */,
 				E22CA81E2A324F8700ABA374 /* NetworkingClientMock.swift in Sources */,
 				E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */,
 				E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */,
+				E2C61CB32A32AB9200D45EE0 /* Account+Sample.swift in Sources */,
 				E22CA8482A327DC700ABA374 /* AuthorizationMiddlewareTests.swift in Sources */,
+				E2C61CB52A32AE0200D45EE0 /* AuthorizationViewModelTests.swift in Sources */,
 				E22CA83B2A32730200ABA374 /* AuthorizationServiceMock.swift in Sources */,
 				E22CA8422A32778C00ABA374 /* TestError.swift in Sources */,
 				E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */,
+				E2C61CB12A32AAB300D45EE0 /* AccountsApiServiceTests.swift in Sources */,
 				E22CA83D2A3273CA00ABA374 /* AuthorizationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

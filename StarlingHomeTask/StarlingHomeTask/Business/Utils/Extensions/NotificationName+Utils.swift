@@ -8,5 +8,5 @@
 import Foundation
 
 extension Notification.Name {
-    static let unauthorizedRequest = Notification.Name("kNotification.unauthorizedRequest")
+    static let authorizationChanged = Notification.Name("kNotification.authorizationChanged")
 }

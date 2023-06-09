@@ -9,7 +9,6 @@
 import Foundation
 
 final class AuthorizationServiceMock: AuthorizationServiceProtocol {
-
     private(set) var updateAuthorizationTokenToken = [String]()
     var updateAuthorizationTokenResult: Result<Void>!
     func updateAuthorizationToken(_ token: String) -> Result<Void> {
@@ -23,5 +22,10 @@ final class AuthorizationServiceMock: AuthorizationServiceProtocol {
     func getAuthorizationToken() -> Result<String?> {
         getAuthorizationTokenCount += 1
         return getAuthorizationTokenResult
+    }
+
+    var subscribeAuthorizationChangedClosures = [(Bool) -> Void]()
+    func subscribeAuthorizationChanged(_ closure: @escaping (Bool) -> Void) {
+        subscribeAuthorizationChangedClosures.append(closure)
     }
 }

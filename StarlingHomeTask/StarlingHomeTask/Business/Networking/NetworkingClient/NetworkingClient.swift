@@ -48,11 +48,19 @@ final class NetworkingClient: NetworkingClientProtocol {
                 guard let httpResponse = response as? HTTPURLResponse, let data else {
                     throw ApiError.genericError
                 }
+                try authorizationMiddleware.validate(response: httpResponse)
                 guard (200..<300).contains(httpResponse.statusCode) else {
                     throw ApiError.httpFailure(code: httpResponse.statusCode)
                 }
-                try authorizationMiddleware.validate(response: httpResponse)
-                let decodedResponse = try JSONDecoder().decode(T.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .custom({ decoder in
+                    let string = try decoder.singleValueContainer().decode(String.self)
+                    guard let date = Self.dateFormatter.date(from: string) else {
+                        throw ApiError.iso8601DateDecodingFailure
+                    }
+                    return date
+                })
+                let decodedResponse = try decoder.decode(T.self, from: data)
                 completion(.success(decodedResponse))
             } catch {
                 completion(.failure(error))
@@ -61,4 +69,17 @@ final class NetworkingClient: NetworkingClientProtocol {
         task.resume()
         return task
     }
+}
+
+// MARK: - Decoding
+
+private extension NetworkingClient {
+    private static let dateFormatter = {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [
+            .withInternetDateTime,
+            .withFractionalSeconds
+        ]
+        return formatter
+    }()
 }

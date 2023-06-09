@@ -10,15 +10,21 @@ import XCTest
 
 final class AuthorizationServiceTests: XCTestCase {
     private var keychain: KeychainMock!
+    private var notificationCenter: NotificationCenter!
     private var sut: AuthorizationService!
 
     override func setUp() {
         keychain = .init()
-        sut = .init(keychain: keychain)
+        notificationCenter = NotificationCenter()
+        sut = .init(
+            keychain: keychain,
+            notificationCenter: notificationCenter
+        )
     }
 
     override func tearDown() {
         keychain = nil
+        notificationCenter = nil
         sut = nil
     }
 
@@ -34,6 +40,54 @@ final class AuthorizationServiceTests: XCTestCase {
         XCTAssertEqual(keychain.writeData, [randomStringData])
     }
 
+    func testUpdateAuthorizationToken_whenKeychainWriteSucceedsAndTokenIsNonEmpty_itNotifiesSubscribersIsAuthorized() throws {
+        let randomString = UUID().uuidString
+        keychain.writeResult = .success
+
+        let expectation = XCTestExpectation()
+        expectation.expectedFulfillmentCount = 2
+
+        let listeners = [
+            AuthorizationService(keychain: keychain, notificationCenter: notificationCenter),
+            AuthorizationService(keychain: keychain, notificationCenter: notificationCenter)
+        ]
+
+        listeners.forEach { service in
+            service.subscribeAuthorizationChanged { authorized in
+                XCTAssertTrue(authorized)
+                expectation.fulfill()
+            }
+        }
+
+        sut.updateAuthorizationToken(randomString)
+
+        wait(for: [expectation], timeout: 0.1)
+    }
+
+    func testUpdateAuthorizationToken_whenKeychainWriteSucceedsAndTokenIsEmpty_itNotifiesSubscribersIsUnauthorized() throws {
+        keychain.writeResult = .success
+
+        let expectation = XCTestExpectation()
+        expectation.expectedFulfillmentCount = 2
+
+        let listeners = [
+            AuthorizationService(keychain: keychain, notificationCenter: notificationCenter),
+            AuthorizationService(keychain: keychain, notificationCenter: notificationCenter)
+        ]
+
+        listeners.forEach { service in
+            service.subscribeAuthorizationChanged { authorized in
+                XCTAssertFalse(authorized)
+                expectation.fulfill()
+            }
+        }
+
+        sut.updateAuthorizationToken("")
+
+        wait(for: [expectation], timeout: 0.1)
+    }
+
+
     func testUpdateAuthorizationToken_whenKeychainWriteFailure_itReturnsFailure() throws {
         let randomString = UUID().uuidString
         keychain.writeResult = .failure(TestError.test)
@@ -41,6 +95,22 @@ final class AuthorizationServiceTests: XCTestCase {
         let updateResult = sut.updateAuthorizationToken(randomString)
 
         XCTAssertEqual(updateResult, .failure(TestError.test))
+    }
+
+    func testUpdateAuthorizationToken_whenKeychainWriteFailure_itDoesNotNotifiySubscribers() throws {
+        let randomString = Bool.random() ? "" : UUID().uuidString
+        keychain.writeResult = .failure(TestError.test)
+
+        let expectation = XCTestExpectation()
+        expectation.isInverted = true
+
+        sut.subscribeAuthorizationChanged { _ in
+            expectation.fulfill()
+        }
+
+        sut.updateAuthorizationToken(randomString)
+
+        wait(for: [expectation], timeout: 0.1)
     }
 
     func testGetAuthorizationToken_whenKeychainReadSucceedsAndValidStringData_itReturnsString() throws {
