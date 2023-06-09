@@ -59,6 +59,16 @@
 		E2C61CCD2A33516100D45EE0 /* HomeFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CCC2A33516100D45EE0 /* HomeFlowTests.swift */; };
 		E2C61CCF2A33516B00D45EE0 /* FlowLauncherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CCE2A33516B00D45EE0 /* FlowLauncherMock.swift */; };
 		E2C61CD12A33522100D45EE0 /* ScreenFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CD02A33522100D45EE0 /* ScreenFactoryMock.swift */; };
+		E2C61CD42A33699A00D45EE0 /* FeedApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CD32A33699A00D45EE0 /* FeedApiService.swift */; };
+		E2C61CD72A3369A900D45EE0 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CD62A3369A900D45EE0 /* FeedItem.swift */; };
+		E2C61CD92A336A3300D45EE0 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CD82A336A3300D45EE0 /* Money.swift */; };
+		E2C61CDB2A336A6C00D45EE0 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CDA2A336A6C00D45EE0 /* FeedResponse.swift */; };
+		E2C61CDE2A33734F00D45EE0 /* RoundUpFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CDD2A33734F00D45EE0 /* RoundUpFlow.swift */; };
+		E2C61CE12A33739100D45EE0 /* RoundUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE02A33739100D45EE0 /* RoundUpViewController.swift */; };
+		E2C61CE32A33744200D45EE0 /* RoundUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE22A33744200D45EE0 /* RoundUpViewModel.swift */; };
+		E2C61CE52A3375E800D45EE0 /* Money+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE42A3375E800D45EE0 /* Money+Utils.swift */; };
+		E2C61CE72A3382DE00D45EE0 /* RoundUpScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE62A3382DE00D45EE0 /* RoundUpScreenInteractor.swift */; };
+		E2C61CE92A3384A900D45EE0 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CE82A3384A900D45EE0 /* Array+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +147,16 @@
 		E2C61CCC2A33516100D45EE0 /* HomeFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowTests.swift; sourceTree = "<group>"; };
 		E2C61CCE2A33516B00D45EE0 /* FlowLauncherMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLauncherMock.swift; sourceTree = "<group>"; };
 		E2C61CD02A33522100D45EE0 /* ScreenFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactoryMock.swift; sourceTree = "<group>"; };
+		E2C61CD32A33699A00D45EE0 /* FeedApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApiService.swift; sourceTree = "<group>"; };
+		E2C61CD62A3369A900D45EE0 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		E2C61CD82A336A3300D45EE0 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		E2C61CDA2A336A6C00D45EE0 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		E2C61CDD2A33734F00D45EE0 /* RoundUpFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpFlow.swift; sourceTree = "<group>"; };
+		E2C61CE02A33739100D45EE0 /* RoundUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpViewController.swift; sourceTree = "<group>"; };
+		E2C61CE22A33744200D45EE0 /* RoundUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpViewModel.swift; sourceTree = "<group>"; };
+		E2C61CE42A3375E800D45EE0 /* Money+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Money+Utils.swift"; sourceTree = "<group>"; };
+		E2C61CE62A3382DE00D45EE0 /* RoundUpScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpScreenInteractor.swift; sourceTree = "<group>"; };
+		E2C61CE82A3384A900D45EE0 /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +334,7 @@
 		E22CA8352A32729500ABA374 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E2C61CD22A33698D00D45EE0 /* FeedApiService */,
 				E22CA8512A3285E900ABA374 /* AccountsApiService */,
 				E22CA8342A32728A00ABA374 /* AuthorizationService */,
 			);
@@ -361,6 +382,7 @@
 			children = (
 				E22CA84E2A32825E00ABA374 /* NotificationName+Utils.swift */,
 				E22CA8172A324A0800ABA374 /* Result+Utils.swift */,
+				E2C61CE82A3384A900D45EE0 /* Array+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -388,6 +410,8 @@
 		E22CA8542A32878400ABA374 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E2C61CD82A336A3300D45EE0 /* Money.swift */,
+				E2C61CD62A3369A900D45EE0 /* FeedItem.swift */,
 				E22CA8552A3287B700ABA374 /* Account.swift */,
 			);
 			path = Models;
@@ -454,6 +478,7 @@
 				E22CA8702A329D6200ABA374 /* Constraints */,
 				E22CA8672A32999A00ABA374 /* Components */,
 				E2C61CBE2A332B9A00D45EE0 /* Reusable.swift */,
+				E2C61CE42A3375E800D45EE0 /* Money+Utils.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -477,6 +502,7 @@
 		E2C61CC42A334A4200D45EE0 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				E2C61CDC2A33733900D45EE0 /* RoundUpFlow */,
 				E2C61CC72A334B5600D45EE0 /* HomeFlow */,
 			);
 			path = Flows;
@@ -490,6 +516,42 @@
 				E2C61CCC2A33516100D45EE0 /* HomeFlowTests.swift */,
 			);
 			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		E2C61CD22A33698D00D45EE0 /* FeedApiService */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CD52A3369A000D45EE0 /* Models */,
+				E2C61CD32A33699A00D45EE0 /* FeedApiService.swift */,
+			);
+			path = FeedApiService;
+			sourceTree = "<group>";
+		};
+		E2C61CD52A3369A000D45EE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CDA2A336A6C00D45EE0 /* FeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2C61CDC2A33733900D45EE0 /* RoundUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CDF2A33737800D45EE0 /* RoundUpScreen */,
+				E2C61CDD2A33734F00D45EE0 /* RoundUpFlow.swift */,
+			);
+			path = RoundUpFlow;
+			sourceTree = "<group>";
+		};
+		E2C61CDF2A33737800D45EE0 /* RoundUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E2C61CE02A33739100D45EE0 /* RoundUpViewController.swift */,
+				E2C61CE22A33744200D45EE0 /* RoundUpViewModel.swift */,
+				E2C61CE62A3382DE00D45EE0 /* RoundUpScreenInteractor.swift */,
+			);
+			path = RoundUpScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,11 +686,14 @@
 			files = (
 				E22CA8612A3290B500ABA374 /* HomeViewModel.swift in Sources */,
 				E22CA86E2A329BC300ABA374 /* TextField.swift in Sources */,
+				E2C61CE72A3382DE00D45EE0 /* RoundUpScreenInteractor.swift in Sources */,
 				E2C61CC92A334B6C00D45EE0 /* ScreenFactory.swift in Sources */,
+				E2C61CE92A3384A900D45EE0 /* Array+Utils.swift in Sources */,
 				E22CA8332A32700B00ABA374 /* AuthorizationService.swift in Sources */,
 				E22CA8562A3287B700ABA374 /* Account.swift in Sources */,
 				E22CA81A2A324ED300ABA374 /* ApiError.swift in Sources */,
 				E2C61CBB2A33268200D45EE0 /* Cell.swift in Sources */,
+				E2C61CDB2A336A6C00D45EE0 /* FeedResponse.swift in Sources */,
 				E2C61CBF2A332B9A00D45EE0 /* Reusable.swift in Sources */,
 				E22CA8532A32875A00ABA374 /* AccountsApiService.swift in Sources */,
 				E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */,
@@ -636,12 +701,18 @@
 				E22CA86C2A329B0100ABA374 /* IgnoreEquatable.swift in Sources */,
 				E2C61CCB2A334DCA00D45EE0 /* FlowLauncher.swift in Sources */,
 				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
+				E2C61CDE2A33734F00D45EE0 /* RoundUpFlow.swift in Sources */,
+				E2C61CE12A33739100D45EE0 /* RoundUpViewController.swift in Sources */,
+				E2C61CD92A336A3300D45EE0 /* Money.swift in Sources */,
+				E2C61CD42A33699A00D45EE0 /* FeedApiService.swift in Sources */,
 				E22CA8662A3291FC00ABA374 /* AuthorizationViewController.swift in Sources */,
+				E2C61CE52A3375E800D45EE0 /* Money+Utils.swift in Sources */,
 				E2C61CC62A334A4B00D45EE0 /* HomeFlow.swift in Sources */,
 				E22CA8262A325A4500ABA374 /* KeychainClient.swift in Sources */,
 				E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */,
 				E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */,
 				E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */,
+				E2C61CD72A3369A900D45EE0 /* FeedItem.swift in Sources */,
 				E22CA8592A32899700ABA374 /* AccountsResponse.swift in Sources */,
 				E22CA85F2A3290AD00ABA374 /* HomeViewController.swift in Sources */,
 				E22CA8282A325BA900ABA374 /* KeychainError.swift in Sources */,
@@ -650,6 +721,7 @@
 				E22CA8722A329D7600ABA374 /* UIView+Constraints.swift in Sources */,
 				E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */,
 				E22CA8642A3291E600ABA374 /* AuthorizationViewModel.swift in Sources */,
+				E2C61CE32A33744200D45EE0 /* RoundUpViewModel.swift in Sources */,
 				E22CA8452A32798600ABA374 /* AuthorizationMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

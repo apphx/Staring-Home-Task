@@ -28,5 +28,9 @@ final class FlowLauncher: FlowLauncherProtocol {
         navigationController: UINavigationController,
         account: Account
     ) {
+        RoundUpFlow(
+            navigationController: navigationController,
+            screenFactory: ScreenFactory()
+        ).start(account: account)
     }
 }

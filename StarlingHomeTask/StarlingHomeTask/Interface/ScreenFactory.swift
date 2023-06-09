@@ -9,6 +9,7 @@ import UIKit
 
 protocol ScreenFactoryProtocol: AnyObject {
     func makeHomeScreen(onAction: @escaping (HomeViewModel.Action) -> Void)  -> UIViewController
+    func makeRoundUpScreen(account: Account, onCompletion: @escaping () -> Void) -> UIViewController
 }
 
 final class ScreenFactory: ScreenFactoryProtocol {
@@ -19,5 +20,13 @@ final class ScreenFactory: ScreenFactoryProtocol {
             onAction: onAction
         )
         return HomeViewController(viewModel: viewModel)
+    }
+
+    func makeRoundUpScreen(account: Account, onCompletion: @escaping () -> Void) -> UIViewController {
+        let viewModel = RoundUpViewModel(
+            account: account,
+            screenInteractor: RoundUpScreenInteractor()
+        )
+        return RoundUpViewController(viewModel: viewModel)
     }
 }

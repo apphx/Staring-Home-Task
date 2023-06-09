@@ -31,6 +31,8 @@ final class AccountsApiServiceTests: XCTestCase {
         sut.getAccounts { result in
             XCTAssertEqual(result, .success(response.accounts.map { $0 }))
         }
+        let expectedRequest = URLRequest.makeWith(path: "/accounts")
+        XCTAssertEqual(network.requests, [expectedRequest])
     }
 
     func testGetAccounts_whenApiServiceReturnsError_itReturnsError() {

@@ -25,6 +25,7 @@ final class Button: UIButton {
         self.model = model
         setTitle(model.title, for: .normal)
         setTitleColor(model.titleColor, for: .normal)
+        backgroundColor = model.backgroundColor
     }
 
     @objc
@@ -39,15 +40,18 @@ extension Button {
     final class Model {
         let title: String
         let titleColor: UIColor
+        let backgroundColor: UIColor
         let onTap: () -> Void
 
         init(
             title: String,
             titleColor: UIColor,
+            backgroundColor: UIColor = .clear,
             onTap: @escaping () -> Void
         ) {
             self.title = title
             self.titleColor = titleColor
+            self.backgroundColor = backgroundColor
             self.onTap = onTap
         }
     }
