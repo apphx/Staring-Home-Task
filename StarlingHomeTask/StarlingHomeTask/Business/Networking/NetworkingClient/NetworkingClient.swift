@@ -11,8 +11,23 @@ protocol NetworkingClientProtocol: AnyObject {
     @discardableResult
     func execute<T>(
         request: URLRequest,
+        completionQueue: DispatchQueue,
         completion: @escaping (Result<T>) -> Void
     ) -> Cancellable where T: Decodable
+}
+
+extension NetworkingClientProtocol {
+    @discardableResult
+    func execute<T>(
+        request: URLRequest,
+        completion: @escaping (Result<T>) -> Void
+    ) -> Cancellable where T: Decodable {
+        execute(
+            request: request,
+            completionQueue: .main,
+            completion: completion
+        )
+    }
 }
 
 final class NetworkingClient: NetworkingClientProtocol {
@@ -39,6 +54,7 @@ final class NetworkingClient: NetworkingClientProtocol {
     @discardableResult
     func execute<T>(
         request: URLRequest,
+        completionQueue: DispatchQueue,
         completion: @escaping (Result<T>) -> Void
     ) -> Cancellable where T: Decodable {
         let authorizedRequest = authorizationMiddleware.authorizedRequest(from: request)
@@ -61,9 +77,13 @@ final class NetworkingClient: NetworkingClientProtocol {
                     return date
                 })
                 let decodedResponse = try decoder.decode(T.self, from: data)
-                completion(.success(decodedResponse))
+                completionQueue.async {
+                    completion(.success(decodedResponse))
+                }
             } catch {
-                completion(.failure(error))
+                completionQueue.async {
+                    completion(.failure(error))
+                }
             }
         }
         task.resume()

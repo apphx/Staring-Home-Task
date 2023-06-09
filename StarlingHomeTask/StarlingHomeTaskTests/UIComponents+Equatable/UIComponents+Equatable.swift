@@ -26,3 +26,24 @@ extension TextField.Model: Equatable {
         lhs.text == rhs.text
     }
 }
+
+extension Label.Model: Equatable {
+    public static func == (
+        lhs: StarlingHomeTask.Label.Model,
+        rhs: StarlingHomeTask.Label.Model
+    ) -> Bool {
+        lhs.text == rhs.text &&
+        lhs.textColor == rhs.textColor &&
+        lhs.numberOfLines == rhs.numberOfLines
+    }
+}
+
+extension Cell.Model: Equatable {
+    public static func == (
+        lhs: StarlingHomeTask.Cell.Model,
+        rhs: StarlingHomeTask.Cell.Model
+    ) -> Bool {
+        lhs.title == rhs.title &&
+        lhs.subtitle == rhs.subtitle
+    }
+}

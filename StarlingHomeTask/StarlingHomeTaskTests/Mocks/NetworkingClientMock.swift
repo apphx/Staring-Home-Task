@@ -16,6 +16,7 @@ final class NetworkingClientMock<T: Decodable>: NetworkingClientProtocol {
 
     func execute<T>(
         request: URLRequest,
+        completionQueue: DispatchQueue,
         completion: @escaping (StarlingHomeTask.Result<T>) -> Void
     ) -> Cancellable where T: Decodable {
         requests.append(request)
