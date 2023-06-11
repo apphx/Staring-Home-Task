@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SavingsGoalsApiServiceProtocol: AnyObject {
-    func getSpaces(
+    func getSavingsGoals(
         accountId: String,
         completion: @escaping (Result<[SavingsGoal]>) -> Void
     )
@@ -35,7 +35,7 @@ final class SavingsGoalsApiService: SavingsGoalsApiServiceProtocol {
         self.init(network: NetworkingClient())
     }
 
-    func getSpaces(
+    func getSavingsGoals(
         accountId: String,
         completion: @escaping (Result<[SavingsGoal]>) -> Void
     ) {

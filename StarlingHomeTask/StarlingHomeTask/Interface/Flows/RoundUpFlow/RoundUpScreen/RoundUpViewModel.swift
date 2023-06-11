@@ -102,6 +102,7 @@ private extension RoundUpViewModel {
             case let .success(feedItems):
                 self?.reloadWithContent(feedItems: feedItems.outgoingItems())
                 self?.idempotencyKey = UUID().uuidString
+                // disable/enable round up button if there are no items
             case let .failure(error):
                 print(error)
                 // would need proper error state, but for simplicity purposes it will be silenced

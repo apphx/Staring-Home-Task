@@ -41,9 +41,12 @@
 		E22CA8642A3291E600ABA374 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8632A3291E600ABA374 /* AuthorizationViewModel.swift */; };
 		E22CA8662A3291FC00ABA374 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8652A3291FC00ABA374 /* AuthorizationViewController.swift */; };
 		E22CA8692A3299AA00ABA374 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8682A3299AA00ABA374 /* Button.swift */; };
-		E22CA86C2A329B0100ABA374 /* IgnoreEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA86B2A329B0100ABA374 /* IgnoreEquatable.swift */; };
 		E22CA86E2A329BC300ABA374 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA86D2A329BC300ABA374 /* TextField.swift */; };
 		E22CA8722A329D7600ABA374 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8712A329D7600ABA374 /* UIView+Constraints.swift */; };
+		E2A968C22A35FFDE005B6C8E /* FeedApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A968C12A35FFDE005B6C8E /* FeedApiServiceTests.swift */; };
+		E2A968C42A360166005B6C8E /* FeedItem+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A968C32A360166005B6C8E /* FeedItem+Sample.swift */; };
+		E2A968C62A360692005B6C8E /* RoundUpScreenInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A968C52A360691005B6C8E /* RoundUpScreenInteractorTests.swift */; };
+		E2A968C82A360828005B6C8E /* RoundUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A968C72A360828005B6C8E /* RoundUpViewModelTests.swift */; };
 		E2C61CB12A32AAB300D45EE0 /* AccountsApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB02A32AAB300D45EE0 /* AccountsApiServiceTests.swift */; };
 		E2C61CB32A32AB9200D45EE0 /* Account+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB22A32AB9200D45EE0 /* Account+Sample.swift */; };
 		E2C61CB52A32AE0200D45EE0 /* AuthorizationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CB42A32AE0200D45EE0 /* AuthorizationViewModelTests.swift */; };
@@ -74,6 +77,9 @@
 		E2C61CF12A338C1C00D45EE0 /* SpacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF02A338C1C00D45EE0 /* SpacesResponse.swift */; };
 		E2C61CF32A338C2500D45EE0 /* SavingsGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF22A338C2500D45EE0 /* SavingsGoal.swift */; };
 		E2C61CF52A338DF000D45EE0 /* AddMoneyBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF42A338DF000D45EE0 /* AddMoneyBody.swift */; };
+		E2C61CF72A35F70200D45EE0 /* SavingsGoalApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF62A35F70200D45EE0 /* SavingsGoalApiServiceTests.swift */; };
+		E2C61CF92A35F90900D45EE0 /* SavingsGoal+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CF82A35F90900D45EE0 /* SavingsGoal+Sample.swift */; };
+		E2C61CFB2A35F94B00D45EE0 /* Money+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C61CFA2A35F94B00D45EE0 /* Money+Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,9 +140,12 @@
 		E22CA8632A3291E600ABA374 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		E22CA8652A3291FC00ABA374 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		E22CA8682A3299AA00ABA374 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		E22CA86B2A329B0100ABA374 /* IgnoreEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreEquatable.swift; sourceTree = "<group>"; };
 		E22CA86D2A329BC300ABA374 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		E22CA8712A329D7600ABA374 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		E2A968C12A35FFDE005B6C8E /* FeedApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApiServiceTests.swift; sourceTree = "<group>"; };
+		E2A968C32A360166005B6C8E /* FeedItem+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedItem+Sample.swift"; sourceTree = "<group>"; };
+		E2A968C52A360691005B6C8E /* RoundUpScreenInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpScreenInteractorTests.swift; sourceTree = "<group>"; };
+		E2A968C72A360828005B6C8E /* RoundUpViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpViewModelTests.swift; sourceTree = "<group>"; };
 		E2C61CB02A32AAB300D45EE0 /* AccountsApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApiServiceTests.swift; sourceTree = "<group>"; };
 		E2C61CB22A32AB9200D45EE0 /* Account+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+Sample.swift"; sourceTree = "<group>"; };
 		E2C61CB42A32AE0200D45EE0 /* AuthorizationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModelTests.swift; sourceTree = "<group>"; };
@@ -167,6 +176,9 @@
 		E2C61CF02A338C1C00D45EE0 /* SpacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesResponse.swift; sourceTree = "<group>"; };
 		E2C61CF22A338C2500D45EE0 /* SavingsGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoal.swift; sourceTree = "<group>"; };
 		E2C61CF42A338DF000D45EE0 /* AddMoneyBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyBody.swift; sourceTree = "<group>"; };
+		E2C61CF62A35F70200D45EE0 /* SavingsGoalApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoalApiServiceTests.swift; sourceTree = "<group>"; };
+		E2C61CF82A35F90900D45EE0 /* SavingsGoal+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavingsGoal+Sample.swift"; sourceTree = "<group>"; };
+		E2C61CFA2A35F94B00D45EE0 /* Money+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Money+Sample.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,7 +306,6 @@
 		E22CA8142A32497C00ABA374 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E22CA86A2A329AF400ABA374 /* PropertyWrappers */,
 				E22CA8462A327A0A00ABA374 /* Extensions */,
 				E22CA8232A3259D900ABA374 /* Models */,
 			);
@@ -404,6 +415,9 @@
 				E22CA84A2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift */,
 				E22CA84C2A327F3C00ABA374 /* URL+Sample.swift */,
 				E2C61CB22A32AB9200D45EE0 /* Account+Sample.swift */,
+				E2C61CF82A35F90900D45EE0 /* SavingsGoal+Sample.swift */,
+				E2C61CFA2A35F94B00D45EE0 /* Money+Sample.swift */,
+				E2A968C32A360166005B6C8E /* FeedItem+Sample.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -476,14 +490,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E22CA86A2A329AF400ABA374 /* PropertyWrappers */ = {
-			isa = PBXGroup;
-			children = (
-				E22CA86B2A329B0100ABA374 /* IgnoreEquatable.swift */,
-			);
-			path = PropertyWrappers;
-			sourceTree = "<group>";
-		};
 		E22CA86F2A329D5500ABA374 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +541,7 @@
 			children = (
 				E2C61CD52A3369A000D45EE0 /* Models */,
 				E2C61CD32A33699A00D45EE0 /* FeedApiService.swift */,
+				E2A968C12A35FFDE005B6C8E /* FeedApiServiceTests.swift */,
 			);
 			path = FeedApiService;
 			sourceTree = "<group>";
@@ -562,6 +569,8 @@
 				E2C61CE02A33739100D45EE0 /* RoundUpViewController.swift */,
 				E2C61CE22A33744200D45EE0 /* RoundUpViewModel.swift */,
 				E2C61CE62A3382DE00D45EE0 /* RoundUpScreenInteractor.swift */,
+				E2A968C52A360691005B6C8E /* RoundUpScreenInteractorTests.swift */,
+				E2A968C72A360828005B6C8E /* RoundUpViewModelTests.swift */,
 			);
 			path = RoundUpScreen;
 			sourceTree = "<group>";
@@ -571,6 +580,7 @@
 			children = (
 				E2C61CED2A338B7C00D45EE0 /* Models */,
 				E2C61CEB2A338B7400D45EE0 /* SavingsGoalApiService.swift */,
+				E2C61CF62A35F70200D45EE0 /* SavingsGoalApiServiceTests.swift */,
 			);
 			path = SavingsGoalsApiService;
 			sourceTree = "<group>";
@@ -731,7 +741,6 @@
 				E22CA8532A32875A00ABA374 /* AccountsApiService.swift in Sources */,
 				E22CA84F2A32825E00ABA374 /* NotificationName+Utils.swift in Sources */,
 				E2C61CBD2A33280500D45EE0 /* Label.swift in Sources */,
-				E22CA86C2A329B0100ABA374 /* IgnoreEquatable.swift in Sources */,
 				E2C61CCB2A334DCA00D45EE0 /* FlowLauncher.swift in Sources */,
 				E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */,
 				E2C61CDE2A33734F00D45EE0 /* RoundUpFlow.swift in Sources */,
@@ -772,7 +781,9 @@
 				E22CA8402A32756E00ABA374 /* Assert+Utils.swift in Sources */,
 				E22CA81E2A324F8700ABA374 /* NetworkingClientMock.swift in Sources */,
 				E2C61CD12A33522100D45EE0 /* ScreenFactoryMock.swift in Sources */,
+				E2A968C22A35FFDE005B6C8E /* FeedApiServiceTests.swift in Sources */,
 				E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */,
+				E2A968C82A360828005B6C8E /* RoundUpViewModelTests.swift in Sources */,
 				E2C61CC12A3341AB00D45EE0 /* HomeViewModelTests.swift in Sources */,
 				E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */,
 				E2C61CB32A32AB9200D45EE0 /* Account+Sample.swift in Sources */,
@@ -780,7 +791,12 @@
 				E2C61CB52A32AE0200D45EE0 /* AuthorizationViewModelTests.swift in Sources */,
 				E22CA83B2A32730200ABA374 /* AuthorizationServiceMock.swift in Sources */,
 				E22CA8422A32778C00ABA374 /* TestError.swift in Sources */,
+				E2A968C62A360692005B6C8E /* RoundUpScreenInteractorTests.swift in Sources */,
+				E2C61CFB2A35F94B00D45EE0 /* Money+Sample.swift in Sources */,
+				E2A968C42A360166005B6C8E /* FeedItem+Sample.swift in Sources */,
+				E2C61CF72A35F70200D45EE0 /* SavingsGoalApiServiceTests.swift in Sources */,
 				E2C61CC32A3342E700D45EE0 /* AccountsApiServiceMock.swift in Sources */,
+				E2C61CF92A35F90900D45EE0 /* SavingsGoal+Sample.swift in Sources */,
 				E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */,
 				E2C61CB12A32AAB300D45EE0 /* AccountsApiServiceTests.swift in Sources */,
 				E22CA83D2A3273CA00ABA374 /* AuthorizationServiceTests.swift in Sources */,

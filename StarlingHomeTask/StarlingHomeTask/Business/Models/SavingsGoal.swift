@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SavingsGoal: Decodable {
+struct SavingsGoal: Decodable, Hashable {
     let savingsGoalUid: String
     let name: String
     let totalSaved: Money

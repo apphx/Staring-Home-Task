@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AddMoneyResponse: Decodable {
+struct AddMoneyResponse: Decodable, Equatable {
     let transferUid: String
     let success: Bool
 }

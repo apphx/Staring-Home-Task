@@ -9,12 +9,14 @@
 import Foundation
 import XCTest
 
-func XCTAssertEqual<T: Equatable>(_ lhs: Result<T>, _ rhs: Result<T>) {
+func XCTAssertEqual<T: Equatable>(_ lhs: Result<T>?, _ rhs: Result<T>?) {
     switch (lhs, rhs) {
     case let (.success(valL), .success(valR)):
         XCTAssertEqual(valL, valR)
     case let (.failure(errL), .failure(errR)):
         XCTAssertEqual(errL as NSError, errR as NSError)
+    case (.none, .none):
+        break
     default:
         XCTFail()
     }

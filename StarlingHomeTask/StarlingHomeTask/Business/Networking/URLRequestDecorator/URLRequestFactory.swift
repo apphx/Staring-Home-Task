@@ -39,7 +39,7 @@ extension URLRequest {
 
 extension URLRequest {
     enum HttpMethod {
-        case get(queryParameters: [String: String] = [:])
+        case get(queryParameters: [(key: String, value: String)] = [])
         case put(body: Encodable)
 
         var rawValue: String {

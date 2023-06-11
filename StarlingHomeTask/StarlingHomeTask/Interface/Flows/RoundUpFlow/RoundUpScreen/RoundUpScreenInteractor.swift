@@ -64,20 +64,24 @@ final class RoundUpScreenInteractor: RoundUpScreenInteractorProtocol {
         money: Money,
         completion: @escaping (Result<Void>) -> Void
     ) {
-        savingsGoalsApiService.getSpaces(accountId: accountId) { result in
+        func addMoney(in savingsGoal: SavingsGoal) {
+            savingsGoalsApiService.addMoney(
+                idempotencyKey: idempotencyKey,
+                money: money,
+                accountId: accountId,
+                savingsGoalId: savingsGoal.savingsGoalUid
+            ) { result in
+                completion(result.map { _ in })
+            }
+        }
+
+        savingsGoalsApiService.getSavingsGoals(accountId: accountId) { result in
             switch result {
             case let .success(savingsGoals):
                 guard let savingsGoal = savingsGoals.first else {
                     return completion(.failure(Error.noSavingsGoalsAvailable))
                 }
-                self.savingsGoalsApiService.addMoney(
-                    idempotencyKey: idempotencyKey,
-                    money: money,
-                    accountId: accountId,
-                    savingsGoalId: savingsGoal.savingsGoalUid
-                ) { result in
-                    completion(result.map { _ in })
-                }
+                addMoney(in: savingsGoal)
             case let .failure(error):
                 completion(.failure(error))
             }

@@ -39,8 +39,8 @@ final class FeedApiService: FeedApiServiceProtocol {
             path: "/feed/account/\(accountId)/settled-transactions-between",
             httpMethod: .get(
                 queryParameters: [
-                    "minTransactionTimestamp": Self.dateFormatter.string(from: fromDate),
-                    "maxTransactionTimestamp": Self.dateFormatter.string(from: toDate)
+                    ("minTransactionTimestamp", Self.dateFormatter.string(from: fromDate)),
+                    ("maxTransactionTimestamp", Self.dateFormatter.string(from: toDate))
                 ]
             )
         )

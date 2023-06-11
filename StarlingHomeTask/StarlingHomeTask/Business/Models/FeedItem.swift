@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FeedItem: Decodable {
+struct FeedItem: Decodable, Hashable {
     enum Direction: String, Decodable {
         case receive = "IN"
         case out = "OUT"

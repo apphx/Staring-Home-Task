@@ -16,4 +16,16 @@ final class ScreenFactoryMock: ScreenFactoryProtocol {
         makeHomeScreenOnActionClosures.append(onAction)
         return makeHomeScreenController
     }
+
+    private(set) var makeRoundUpScreenOnCompletionClosures = [() -> Void]()
+    private(set) var makeRoundUpScreenAccounts = [Account]()
+    var makeRoundUpScreenController: UIViewController!
+    func makeRoundUpScreen(
+        account: Account,
+        onCompletion: @escaping () -> Void
+    ) -> UIViewController {
+        makeRoundUpScreenAccounts.append(account)
+        makeRoundUpScreenOnCompletionClosures.append(onCompletion)
+        return makeRoundUpScreenController
+    }
 }
