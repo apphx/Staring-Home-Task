@@ -1,5 +1,6 @@
 # Staring-Home-Task
 
+Author: Alexandru Pop
 
 ## Product Assumptions
 
