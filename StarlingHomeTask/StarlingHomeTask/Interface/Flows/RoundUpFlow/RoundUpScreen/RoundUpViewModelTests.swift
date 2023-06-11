@@ -26,15 +26,15 @@ final class RoundUpViewModelTests: XCTestCase {
         // TODO
     }
 
-    func testRoundUpButton_whenRoundUpCallSucceeds_itPropagatesCompletion() {
+    func XtestRoundUpButton_whenRoundUpCallSucceeds_itPropagatesCompletion() {
         // TODO
     }
 
-    func testRoundUpButton_whenRoundUpCallFails_itShowsErrorStateForButton() {
+    func XtestRoundUpButton_whenRoundUpCallFails_itShowsErrorStateForButton() {
         // TODO
     }
 
-    func testRoundUpButton_whenPressedMultipleTimesWOHavingTransactionsChange_itPassesSameIdempotencyKey() {
+    func XtestRoundUpButton_whenPressedMultipleTimesWOHavingTransactionsChange_itPassesSameIdempotencyKey() {
         // TODO
     }
 }
