@@ -7,13 +7,13 @@ Author: Alexandru Pop
 - No authentication refresh mechanism is required, test app user can just pass in a basic auth token if current one expired/is missing
 - Auth token shall be stored in keychain and deleted upon expiry
 - When the client receives an unauthenticated response, it will automatically clear the auth token and prompt the user to insert a new one
+- No log out mechanism is needed; user will be logged out once the auth token expires
 - No loading & error states are needed; the product should allow easily appending those states afterwards
 - No persistent storage solution is needed for other entities than auth token (e.g. FeedItem)
-- No error handling UI needs to be implemented
+- No error handling UI needs to be implemented; edge cases such as inssuficient balance or other api errors can be handled afterwards with elegant solutions;
 - Round up is considering all settled outgoing transactions since 7 days ago midnight client date, with no option to select other timeframes
 - Round up can be executed every time the user enters the Transactions screen, even if already previously executed for same data set
 - Round up idempotency key should be randomly generated every time the user presents the intent to perform a new round up action (e.g. enters the round up screen / refreshes it in case of error)
-- No log out mechanism is needed; user will be logged out once the auth token expires
 - Application interacts with FIAT currencies only and considers default minorUnit multiplcation factor be 100
 
 ## Engineering assumptions & considerations
@@ -33,6 +33,7 @@ Author: Alexandru Pop
     - no static code analsys needs to be appended (e.g. swiftlint)
     - no bundle/build analysis and report tools need to be appended (e.g. ipa size breakdown, unused code etc.)
     - no localization is needed; raw string values will be used
+    - given rudimental api responses and no persistent storage solution, domain models won't be constructed from dtos;
 
 ## Architecture
 
