@@ -16,6 +16,8 @@ final class HomeFlowTests: XCTestCase {
     private var sut: HomeFlow!
 
     override func setUp() {
+        // wrapping and mocking the navigation controller would be useful
+        // in case of a more complex setup & further isolating tests from UIKit
         navigationController = .init()
         screenFactory = .init()
         flowLauncher = .init()

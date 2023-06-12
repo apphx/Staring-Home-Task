@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21A2A662A37B171007C41ED /* FeedApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A2A652A37B171007C41ED /* FeedApiServiceMock.swift */; };
+		E21A2A682A37B17D007C41ED /* SavingsGoalsApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A2A672A37B17D007C41ED /* SavingsGoalsApiServiceMock.swift */; };
+		E21A2A6A2A37B82E007C41ED /* RoundUpScreenInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A2A692A37B82E007C41ED /* RoundUpScreenInteractorMock.swift */; };
+		E21A2A6C2A37BCDF007C41ED /* RoundUpFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A2A6B2A37BCDF007C41ED /* RoundUpFlowTests.swift */; };
+		E21A2A6E2A37BF19007C41ED /* MoneyUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A2A6D2A37BF19007C41ED /* MoneyUtilsTests.swift */; };
 		E22CA7DF2A323EC000ABA374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */; };
 		E22CA7E12A323EC000ABA374 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */; };
 		E22CA7E82A323EC400ABA374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22CA7E72A323EC400ABA374 /* Assets.xcassets */; };
 		E22CA7EB2A323EC400ABA374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22CA7E92A323EC400ABA374 /* LaunchScreen.storyboard */; };
-		E22CA8002A323EC500ABA374 /* StarlingHomeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */; };
-		E22CA8022A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */; };
 		E22CA8132A3248C000ABA374 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8122A3248C000ABA374 /* NetworkingClient.swift */; };
 		E22CA8162A3249A200ABA374 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8152A3249A200ABA374 /* Cancellable.swift */; };
 		E22CA8182A324A0800ABA374 /* Result+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA8172A324A0800ABA374 /* Result+Utils.swift */; };
@@ -90,16 +93,14 @@
 			remoteGlobalIDString = E22CA7DA2A323EBF00ABA374;
 			remoteInfo = StarlingHomeTask;
 		};
-		E22CA7FC2A323EC500ABA374 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E22CA7D32A323EBF00ABA374 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E22CA7DA2A323EBF00ABA374;
-			remoteInfo = StarlingHomeTask;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21A2A652A37B171007C41ED /* FeedApiServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApiServiceMock.swift; sourceTree = "<group>"; };
+		E21A2A672A37B17D007C41ED /* SavingsGoalsApiServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoalsApiServiceMock.swift; sourceTree = "<group>"; };
+		E21A2A692A37B82E007C41ED /* RoundUpScreenInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpScreenInteractorMock.swift; sourceTree = "<group>"; };
+		E21A2A6B2A37BCDF007C41ED /* RoundUpFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpFlowTests.swift; sourceTree = "<group>"; };
+		E21A2A6D2A37BF19007C41ED /* MoneyUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyUtilsTests.swift; sourceTree = "<group>"; };
 		E22CA7DB2A323EC000ABA374 /* StarlingHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarlingHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22CA7DE2A323EC000ABA374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E22CA7E02A323EC000ABA374 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,9 +108,6 @@
 		E22CA7EA2A323EC400ABA374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E22CA7EC2A323EC400ABA374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E22CA7F12A323EC500ABA374 /* StarlingHomeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingHomeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarlingHomeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskUITests.swift; sourceTree = "<group>"; };
-		E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlingHomeTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E22CA8122A3248C000ABA374 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		E22CA8152A3249A200ABA374 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		E22CA8172A324A0800ABA374 /* Result+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Utils.swift"; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		E22CA8272A325BA900ABA374 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
 		E22CA8292A3269F100ABA374 /* KeychainMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainMock.swift; sourceTree = "<group>"; };
 		E22CA82B2A326EBA00ABA374 /* StarlingHomeTaskUnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StarlingHomeTaskUnitTests.xctestplan; sourceTree = "<group>"; };
-		E22CA82C2A326EE200ABA374 /* StarlingHomeTaskUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = StarlingHomeTaskUITests.xctestplan; path = ../StarlingHomeTaskUITests.xctestplan; sourceTree = "<group>"; };
 		E22CA8322A32700B00ABA374 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		E22CA83A2A32730200ABA374 /* AuthorizationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationServiceMock.swift; sourceTree = "<group>"; };
 		E22CA83C2A3273CA00ABA374 /* AuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationServiceTests.swift; sourceTree = "<group>"; };
@@ -196,13 +193,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E22CA7F82A323EC500ABA374 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -210,10 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				E22CA82B2A326EBA00ABA374 /* StarlingHomeTaskUnitTests.xctestplan */,
-				E22CA82C2A326EE200ABA374 /* StarlingHomeTaskUITests.xctestplan */,
 				E22CA7DD2A323EC000ABA374 /* StarlingHomeTask */,
 				E22CA7F42A323EC500ABA374 /* StarlingHomeTaskTests */,
-				E22CA7FE2A323EC500ABA374 /* StarlingHomeTaskUITests */,
 				E22CA7DC2A323EC000ABA374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -223,7 +211,6 @@
 			children = (
 				E22CA7DB2A323EC000ABA374 /* StarlingHomeTask.app */,
 				E22CA7F12A323EC500ABA374 /* StarlingHomeTaskTests.xctest */,
-				E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,15 +235,6 @@
 				E22CA81C2A324F7600ABA374 /* Mocks */,
 			);
 			path = StarlingHomeTaskTests;
-			sourceTree = "<group>";
-		};
-		E22CA7FE2A323EC500ABA374 /* StarlingHomeTaskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E22CA7FF2A323EC500ABA374 /* StarlingHomeTaskUITests.swift */,
-				E22CA8012A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift */,
-			);
-			path = StarlingHomeTaskUITests;
 			sourceTree = "<group>";
 		};
 		E22CA80E2A32486000ABA374 /* Interface */ = {
@@ -322,6 +300,9 @@
 				E2C61CC22A3342E700D45EE0 /* AccountsApiServiceMock.swift */,
 				E2C61CCE2A33516B00D45EE0 /* FlowLauncherMock.swift */,
 				E2C61CD02A33522100D45EE0 /* ScreenFactoryMock.swift */,
+				E21A2A652A37B171007C41ED /* FeedApiServiceMock.swift */,
+				E21A2A672A37B17D007C41ED /* SavingsGoalsApiServiceMock.swift */,
+				E21A2A692A37B82E007C41ED /* RoundUpScreenInteractorMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -497,6 +478,7 @@
 				E22CA8672A32999A00ABA374 /* Components */,
 				E2C61CBE2A332B9A00D45EE0 /* Reusable.swift */,
 				E2C61CE42A3375E800D45EE0 /* Money+Utils.swift */,
+				E21A2A6D2A37BF19007C41ED /* MoneyUtilsTests.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -559,6 +541,7 @@
 			children = (
 				E2C61CDF2A33737800D45EE0 /* RoundUpScreen */,
 				E2C61CDD2A33734F00D45EE0 /* RoundUpFlow.swift */,
+				E21A2A6B2A37BCDF007C41ED /* RoundUpFlowTests.swift */,
 			);
 			path = RoundUpFlow;
 			sourceTree = "<group>";
@@ -633,24 +616,6 @@
 			productReference = E22CA7F12A323EC500ABA374 /* StarlingHomeTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E22CA7FA2A323EC500ABA374 /* StarlingHomeTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E22CA80B2A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTaskUITests" */;
-			buildPhases = (
-				E22CA7F72A323EC500ABA374 /* Sources */,
-				E22CA7F82A323EC500ABA374 /* Frameworks */,
-				E22CA7F92A323EC500ABA374 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E22CA7FD2A323EC500ABA374 /* PBXTargetDependency */,
-			);
-			name = StarlingHomeTaskUITests;
-			productName = StarlingHomeTaskUITests;
-			productReference = E22CA7FB2A323EC500ABA374 /* StarlingHomeTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -665,10 +630,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					E22CA7F02A323EC500ABA374 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = E22CA7DA2A323EBF00ABA374;
-					};
-					E22CA7FA2A323EC500ABA374 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = E22CA7DA2A323EBF00ABA374;
 					};
@@ -689,7 +650,6 @@
 			targets = (
 				E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */,
 				E22CA7F02A323EC500ABA374 /* StarlingHomeTaskTests */,
-				E22CA7FA2A323EC500ABA374 /* StarlingHomeTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -705,13 +665,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E22CA7EF2A323EC500ABA374 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E22CA7F92A323EC500ABA374 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -784,32 +737,28 @@
 				E2A968C22A35FFDE005B6C8E /* FeedApiServiceTests.swift in Sources */,
 				E22CA84D2A327F3C00ABA374 /* URL+Sample.swift in Sources */,
 				E2A968C82A360828005B6C8E /* RoundUpViewModelTests.swift in Sources */,
+				E21A2A6E2A37BF19007C41ED /* MoneyUtilsTests.swift in Sources */,
 				E2C61CC12A3341AB00D45EE0 /* HomeViewModelTests.swift in Sources */,
+				E21A2A682A37B17D007C41ED /* SavingsGoalsApiServiceMock.swift in Sources */,
 				E22CA84B2A327F1400ABA374 /* HTTPUrlResponse+Sample.swift in Sources */,
 				E2C61CB32A32AB9200D45EE0 /* Account+Sample.swift in Sources */,
+				E21A2A6C2A37BCDF007C41ED /* RoundUpFlowTests.swift in Sources */,
 				E22CA8482A327DC700ABA374 /* AuthorizationMiddlewareTests.swift in Sources */,
 				E2C61CB52A32AE0200D45EE0 /* AuthorizationViewModelTests.swift in Sources */,
 				E22CA83B2A32730200ABA374 /* AuthorizationServiceMock.swift in Sources */,
 				E22CA8422A32778C00ABA374 /* TestError.swift in Sources */,
+				E21A2A6A2A37B82E007C41ED /* RoundUpScreenInteractorMock.swift in Sources */,
 				E2A968C62A360692005B6C8E /* RoundUpScreenInteractorTests.swift in Sources */,
 				E2C61CFB2A35F94B00D45EE0 /* Money+Sample.swift in Sources */,
 				E2A968C42A360166005B6C8E /* FeedItem+Sample.swift in Sources */,
 				E2C61CF72A35F70200D45EE0 /* SavingsGoalApiServiceTests.swift in Sources */,
 				E2C61CC32A3342E700D45EE0 /* AccountsApiServiceMock.swift in Sources */,
+				E21A2A662A37B171007C41ED /* FeedApiServiceMock.swift in Sources */,
 				E2C61CF92A35F90900D45EE0 /* SavingsGoal+Sample.swift in Sources */,
 				E22CA82A2A3269F100ABA374 /* KeychainMock.swift in Sources */,
 				E2C61CB12A32AAB300D45EE0 /* AccountsApiServiceTests.swift in Sources */,
 				E22CA83D2A3273CA00ABA374 /* AuthorizationServiceTests.swift in Sources */,
 				E2C61CCD2A33516100D45EE0 /* HomeFlowTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E22CA7F72A323EC500ABA374 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E22CA8022A323EC500ABA374 /* StarlingHomeTaskUITestsLaunchTests.swift in Sources */,
-				E22CA8002A323EC500ABA374 /* StarlingHomeTaskUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,11 +769,6 @@
 			isa = PBXTargetDependency;
 			target = E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */;
 			targetProxy = E22CA7F22A323EC500ABA374 /* PBXContainerItemProxy */;
-		};
-		E22CA7FD2A323EC500ABA374 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E22CA7DA2A323EBF00ABA374 /* StarlingHomeTask */;
-			targetProxy = E22CA7FC2A323EC500ABA374 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1062,48 +1006,6 @@
 			};
 			name = Release;
 		};
-		E22CA80C2A323EC500ABA374 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6885U2XYR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = StarlingHomeTask;
-			};
-			name = Debug;
-		};
-		E22CA80D2A323EC500ABA374 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6885U2XYR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.pop.StarlingHomeTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = StarlingHomeTask;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1130,15 +1032,6 @@
 			buildConfigurations = (
 				E22CA8092A323EC500ABA374 /* Debug */,
 				E22CA80A2A323EC500ABA374 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E22CA80B2A323EC500ABA374 /* Build configuration list for PBXNativeTarget "StarlingHomeTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E22CA80C2A323EC500ABA374 /* Debug */,
-				E22CA80D2A323EC500ABA374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

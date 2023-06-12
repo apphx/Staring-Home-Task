@@ -32,9 +32,6 @@
             reference = "container:StarlingHomeTaskUnitTests.xctestplan"
             default = "YES">
          </TestPlanReference>
-         <TestPlanReference
-            reference = "container:../StarlingHomeTaskUITests.xctestplan">
-         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

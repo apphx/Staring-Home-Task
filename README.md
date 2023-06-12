@@ -6,6 +6,8 @@ Author: Alexandru Pop
 
 - No authentication refresh mechanism is required, test app user can just pass in a basic auth token if current one expired/is missing
 - Auth token shall be stored in keychain and deleted upon expiry
+- When the client receives an unauthenticated response, it will automatically clear the auth token and prompt the user to insert a new one
+- No loading & error states are needed; the product should allow easily appending those states afterwards
 - No persistent storage solution is needed for other entities than auth token (e.g. FeedItem)
 - No error handling UI needs to be implemented
 - Round up is considering all settled outgoing transactions since 7 days ago midnight client date, with no option to select other timeframes
@@ -17,7 +19,7 @@ Author: Alexandru Pop
 ## Engineering assumptions & considerations
 
 - **UI testing**: no need to implement it as is right now; for future reference should be implemented to make sure critical paths of each flow is working as expected, considering a mocked api interaction (e.g. proxying/mock BE etc.)
-- **Unit testing**: given/when/then simple unit testing covering meaningful cases & potential edgecases of each component; unit definition can depend on the context; XCTest Framework is used; consider Quick & Nimble for better readability of complex test cases;
+- **Unit testing**: given/when/then simple unit testing covering meaningful cases & potential edgecases of each component; unit definition can depend on the context; XCTest Framework is used; consider Quick & Nimble for better readability and faster coverage of complex test cases; additionally, data content which has no impact on test relevance (e.g. ids, strings etc.) will be taken as random; further infrastructure could be used to ensure reproductibility of those random states to gradually increase edge case converage;
 - **Snapshot testing**: no need to be implemented as is right now; for future reference should be used to assert individual UI components look as expected;
 - **Security**: standard TSL encryption & no local storage to be sufficient; consider E2E encryption with digital signature for each client version;
 - **Generic**: 
@@ -30,6 +32,7 @@ Author: Alexandru Pop
     - mocking is done manually but code generation tools should be considered (e.g. sourcery)
     - no static code analsys needs to be appended (e.g. swiftlint)
     - no bundle/build analysis and report tools need to be appended (e.g. ipa size breakdown, unused code etc.)
+    - no localization is needed; raw string values will be used
 
 ## Architecture
 

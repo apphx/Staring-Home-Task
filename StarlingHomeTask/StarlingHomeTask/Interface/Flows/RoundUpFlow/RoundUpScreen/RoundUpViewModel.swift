@@ -95,7 +95,7 @@ private extension RoundUpViewModel {
 
     func refresh() {
         screenInteractor.fetchSettledOutoingTransactionsSinceLastWeek(
-            referenceDate: Date(),
+            referenceDate: Date(), // causes flackyness; further improvement to have this injected
             accountId: account.accountUid
         ) { [weak self] result in
             switch result {

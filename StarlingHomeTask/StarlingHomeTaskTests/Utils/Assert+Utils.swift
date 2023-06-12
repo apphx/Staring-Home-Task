@@ -22,9 +22,10 @@ func XCTAssertEqual<T: Equatable>(_ lhs: Result<T>?, _ rhs: Result<T>?) {
     }
 }
 
-func XCTAssertEqual(_ lhs: Result<Void>, _ rhs: Result<Void>) {
+func XCTAssertEqual(_ lhs: Result<Void>?, _ rhs: Result<Void>?) {
     switch (lhs, rhs) {
-    case (.success, .success):
+    case (.success, .success),
+        (.none, .none):
         break
     case let (.failure(errL), .failure(errR)):
         XCTAssertEqual(errL as NSError, errR as NSError)

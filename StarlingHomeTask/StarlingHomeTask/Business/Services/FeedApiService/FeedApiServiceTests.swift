@@ -50,7 +50,16 @@ final class FeedApiServiceTests: XCTestCase {
         XCTAssertEqual(network.requests, [expectedRequest])
     }
 
-    func XtestGetSettledFeedItems_whenApiServiceReturnsFailure_itPropagatesFailure() {
-        // TODO
+    func testGetSettledFeedItems_whenApiServiceReturnsFailure_itPropagatesFailure() {
+        network.response = .failure(TestError.test)
+        var result: Result<[FeedItem]>?
+
+        sut.getSettledFeedItems(
+            accountId: UUID().uuidString,
+            fromDate: .distantPast,
+            toDate: .distantFuture
+        ) { result = $0 }
+
+        XCTAssertEqual(result, .failure(TestError.test))
     }
 }

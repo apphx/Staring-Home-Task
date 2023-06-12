@@ -23,6 +23,9 @@ protocol RoundUpScreenInteractorProtocol: AnyObject {
 }
 
 final class RoundUpScreenInteractor: RoundUpScreenInteractorProtocol {
+    private enum Constants {
+        static let pastDateIntervalInDays = -7
+    }
     private let feedApiService: FeedApiServiceProtocol
     private let savingsGoalsApiService: SavingsGoalsApiServiceProtocol
 
@@ -47,7 +50,7 @@ final class RoundUpScreenInteractor: RoundUpScreenInteractorProtocol {
         completion: @escaping (Result<[FeedItem]>) -> Void
     ) {
         let midnightDate = Calendar.current.startOfDay(for: referenceDate)
-        let fromDate = Calendar.current.date(byAdding: .day, value: -7, to: midnightDate)!
+        let fromDate = Calendar.current.date(byAdding: .day, value: Constants.pastDateIntervalInDays, to: midnightDate)!
 
         feedApiService.getSettledFeedItems(
             accountId: accountId,

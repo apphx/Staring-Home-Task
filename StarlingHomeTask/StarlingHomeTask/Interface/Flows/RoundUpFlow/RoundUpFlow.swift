@@ -22,7 +22,7 @@ final class RoundUpFlow {
     func start(account: Account) {
         let controller = screenFactory.makeRoundUpScreen(account: account) { [weak navigationController] in
             navigationController?.popViewController(animated: true)
-            print("rounded up 🚀")
+            print("rounded up 🚀 show success status")
         }
         navigationController?.pushViewController(controller, animated: true)
     }

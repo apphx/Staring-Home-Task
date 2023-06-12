@@ -13,7 +13,7 @@ extension Account {
         accountUid: String = "id",
         accountType: Account.AccountType = .primary,
         defaultCategory: String = "category",
-        currency: String = "currency",
+        currency: String = "EUR",
         createdAt: Date = .distantPast,
         name: String = "account name"
     ) -> Self {

@@ -28,8 +28,15 @@ final class SavingsGoalsApiServiceTests: XCTestCase {
         XCTAssertEqual(network.requests, [.makeWith(path: "/account/\(accountId)/spaces")])
     }
 
-    func XtestGetSavingsGoals_whenApiServiceReturnsFailure_itPropagatesFailure() {
-        // TODO
+    func testGetSavingsGoals_whenApiServiceReturnsFailure_itPropagatesFailure() {
+        let network = NetworkingClientMock<SpacesResponse>()
+        sut = .init(network: network)
+        network.response = .failure(TestError.test)
+
+        var result: Result<[SavingsGoal]>?
+        sut.getSavingsGoals(accountId: UUID().uuidString) { result = $0 }
+
+        XCTAssertEqual(result, .failure(TestError.test))
     }
 
     func testAddMoney_whenApiServiceReturnsSuccess_itReturnsSuccessFromResponse() {
@@ -60,7 +67,21 @@ final class SavingsGoalsApiServiceTests: XCTestCase {
         XCTAssertEqual(network.requests, [expectedRequest])
     }
 
-    func XtestAddMoney_whenApiServiceReturnsFailure_itPropagatesFailure() {
-        // TODO
+    func testAddMoney_whenApiServiceReturnsFailure_itPropagatesFailure() {
+        let network = NetworkingClientMock<AddMoneyResponse>()
+        sut = .init(network: network)
+
+        network.response = .failure(TestError.test)
+
+        var result: Result<AddMoneyResponse>?
+        sut.addMoney(
+            idempotencyKey: UUID().uuidString,
+            money: .eur(),
+            accountId: UUID().uuidString,
+            savingsGoalId: UUID().uuidString
+        ) { result = $0 }
+
+
+        XCTAssertEqual(result, .failure(TestError.test))
     }
 }
